@@ -1,0 +1,45 @@
+﻿
+
+body {
+ 
+  font-family: tahoma, arial, helvetica, sans-serif;
+  }
+h1, h2 {
+  text-align: center;
+  font-family:  georgia, "times new roman", times, serif;
+  }
+h1 {
+  font-size: 32px;
+  color: white;
+  background: #422100;
+  padding:12px;
+  margin-bottom:0px;
+  }
+h2 {
+  font-size: 24px;
+  }
+h3 {
+  font-size: 18px;
+  }
+
+#mainnav {
+  text-align: center;
+  background: #B8944D;
+  padding: 6px;
+  margin:0px;
+  }
+
+#box {
+  border: 4px solid #422100;
+  width: 640px;
+  padding:16px;
+  margin-left: auto; 
+  margin-right: auto;
+  background: #F0E68C;
+  }
+#contact {
+  padding: 4px 24px;
+  background: #B8944D;
+  }
+
+

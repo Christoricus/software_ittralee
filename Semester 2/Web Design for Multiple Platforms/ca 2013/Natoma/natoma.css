@@ -1,0 +1,67 @@
+/* Hotel Natoma */
+
+   
+body {
+
+  font-family: tahoma, verdana, arial, sans-serif;
+  text-align: center;
+
+  }
+
+  ul{
+  text-align: left;
+  }
+h1 {
+
+  
+  font-family:  georgia, "times new roman", times, serif;
+
+  font-weight: normal;
+
+  background: #082008;
+
+  color: white;
+
+  padding: 0;
+
+  margin: 0;
+
+  font-size: 32px;
+
+  }
+
+h2 {
+
+  font-size: 26px;
+
+  }
+
+#box {
+
+  border: 4px solid rgb(8,32,8);
+
+  width:480px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  padding:0;
+
+  background: #93ad78;
+
+  }
+
+#contact {
+
+  text-align: right;
+
+  padding: 8px;
+
+  border-top: 4px solid rgb(8,32,8);
+
+  background: white;
+
+  margin: 0;
+
+  }

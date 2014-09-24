@@ -1,0 +1,147 @@
+//Practical 6 Exercise 3
+
+(a)
+
+Draft 1 of the Pseudocode here could be:
+
+  do
+        Display menu options
+ 	Prompt for users choice
+        Read in users choice
+        
+  	if users choice is 1
+	    determine area of a cylinder
+	else if users choice is 2 
+            determine area of a semicircle
+	else if users choice is 3 
+    	    determine area of a triangle
+	else if users choice is 4 
+ 	    quit the system
+	else 
+    	    display error message
+    		
+   while (choice is not 4)
+   
+   Display a farewell message 	
+
+
+(b)
+
+Refinements to draft 1 of the pseudocode here could be:
+
+The pseudocode to determine area of a cylinder could be refined as follows:
+
+prompt for the radius of cylinder
+read in the radius of cylinder
+prompt for the height of cylinder
+read in the height of cylinder
+set the area of cylinder to  3.14 x radius x radius x height
+display area of cylinder
+
+The pseudocode to determine area of a semicircle could be refined as follows:
+
+prompt for the radius of semicircle
+read in the radius of semicircle
+set the area of semicircle is  (3.14 x radius x radius)/2
+display area of semicircle
+
+The pseudocode to determine area of a triangle could be refined as follows:
+
+prompt for the base length of triangle
+read in the base length of triangle
+prompt for the height of triangle
+read in the height of triangle
+area of triangle is  (base x height)/2
+display area of triangle
+
+
+
+There are no further refinements necessary
+
+
+(c)
+
+The pseudocode for the methods is as follows:
+
+
+------------------------------------------------------------------
+The method definition header for the displayMenu() method is
+
+void displayMenu()
+
+since the purpose of the method is just to display information to the screen. 
+It returns nothing to main(). It just consists of display messages which show 
+appropriate information.
+
+no further refinements are necessary here
+
+The final pseudocode for this method is:
+
+void displayMenu()
+	Display menu options
+
+-------------------------------------------------------------------
+
+
+The method definition header for the cylinderArea() method is
+
+void cylinderArea()
+
+The purpose of the method is to prompt the user for radius and height of 
+cylinder and use it to determine its area. It outputs this value and returns 
+nothing to main().
+
+The pseudocode for the method is:
+
+ 
+void cylinderArea()
+	prompt for the radius of cylinder
+	read in the radius of cylinder
+	prompt for the height of cylinder
+	read in the height of cylinder
+	set the area of cylinder to  3.14 x radius x radius x height
+	display area of cylinder
+
+no further refinements are necessary here
+
+----------------------------------------------------------------------
+
+The method definition header for the semicircleArea() method is
+
+void semicircleArea()
+
+The purpose of the method is to prompt the user for radius of semicircle and use it 
+to determine its area. It outputs this value and returns nothing to main().
+
+
+The pseudocode for the method is:
+void semicircleArea()
+	prompt for the radius of semicircle
+	read in the radius of semicircle
+	set the area of semicircle is  (3.14 x radius x radius)/2
+	display area of semicircle
+
+no further refinements are necessary here
+
+--------------------------------------------------------------------------------
+
+The method definition header for the triangleArea() method is
+
+void triangleArea()
+
+The purpose of the method is to prompt the user for base and height of triangle and use
+these to determine its area. It outputs this value and returns nothing to main() 
+
+The pseudocode for the method is:
+
+void triangleArea()
+	prompt for the base length of triangle
+	read in the base length of triangle
+	prompt for the height of triangle
+	read in the height of triangle
+	area of triangle is  (base x height)/2
+	display area of triangle
+
+
+no further refinements are necessary here
+

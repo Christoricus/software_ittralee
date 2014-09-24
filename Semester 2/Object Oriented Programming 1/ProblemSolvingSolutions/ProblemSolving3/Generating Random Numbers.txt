@@ -1,0 +1,27 @@
+Some Information about Math.random() covered in the "problem solving" session
+------------------------------------------------------------------------------
+        
+
+       Math.random() generates a random number in the range 0-0.999999
+
+       But if you want to generate a whole random number, you must do 
+       something extra
+
+       (int)(Math.random()*smth) + smthelse will generate a random
+       whole number. smth and smthelse decide the lower and upper
+       limits for the random number to be generated
+
+       e.g to generate a random whole number between 1 and 10
+
+       (int)(Math.random()*10) + 1
+
+       here Math.random() generates 0-0.999999
+       multiplying this by 10 generates 0-9.999999999
+       typecasting this result as an int generates 0-9
+       finally adding 1 to the result generates 1-10
+
+       e.g. how would I generate a random number between 5 and 15?
+
+       (int)(Math.random()*11) + 5
+
+       

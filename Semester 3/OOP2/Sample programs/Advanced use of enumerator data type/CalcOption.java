@@ -1,0 +1,1 @@
+public enum CalcOption{ADD,SUBTRACT,MULTIPLY,DIVIDE};

@@ -1,0 +1,5 @@
+Exercise 3 - a tuned quicksort algorithm
+
+Exercise 4 - static double[] copyOf(double[] original,int newLength)
+
+Exercise 5 - static String toString(char[] a)

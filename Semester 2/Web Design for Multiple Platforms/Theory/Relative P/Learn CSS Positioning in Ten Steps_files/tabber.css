@@ -1,0 +1,51 @@
+.tabberlive .tabbertabhide {
+	display: none;
+}
+.tabber {
+	
+}
+.tabberlive {
+	margin-top: 1em;
+}
+ul.tabbernav {
+	font: bold 12px/normal Verdana, sans-serif; margin: 0px; padding: 3px 0px; border-bottom-color: rgb(119, 119, 136); border-bottom-width: 1px; border-bottom-style: solid; font-size-adjust: none; font-stretch: normal;
+}
+ul.tabbernav li {
+	list-style: none; margin: 0px; padding: 0px; display: inline;
+}
+ul.tabbernav li a {
+	background: rgb(221, 221, 238); border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(119, 119, 136) rgb(119, 119, 136) currentColor; padding: 3px 0.5em; border-image: none; text-decoration: none; margin-left: 3px;
+}
+ul.tabbernav li a:link {
+	color: rgb(68, 68, 136);
+}
+ul.tabbernav li a:visited {
+	color: rgb(102, 102, 119);
+}
+ul.tabbernav li a:hover {
+	background: rgb(170, 170, 238); border-color: rgb(34, 34, 119); color: rgb(0, 0, 0);
+}
+ul.tabbernav li.tabberactive a {
+	border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(255, 255, 255);
+}
+ul.tabbernav li.tabberactive a:hover {
+	background: white; color: rgb(0, 0, 0); border-bottom-color: white; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.tabberlive .tabbertab {
+	border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(170, 170, 170) rgb(170, 170, 170); padding: 5px; border-image: none; height: 300px; overflow: auto;
+}
+.tabberlive .tabbertab h2 {
+	
+}
+.tabberlive .tabbertab h3 {
+	
+}
+.tabberlive#tab1 {
+	
+}
+.tabberlive#tab2 {
+	
+}
+.tabberlive#tab2 .tabbertab {
+	height: 200px; overflow: auto;
+}

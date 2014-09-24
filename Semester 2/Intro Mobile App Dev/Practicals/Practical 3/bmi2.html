@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Body Mass Index</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function calcBMI(weight, height) {
+
+	var bmi = (weight * 703) / (height * height);
+ return parseInt(bmi);
+}
+/* ]]> */
+</script>
+</head>
+<body>
+<h1>Body Mass Index</h1>
+<form action="" name="bmiForm">
+<p>
+Weight <input type="text" name="weight" value="0" /><br />
+Height <input type="text" name="height" value="0" /><br />
+BMI <input type="text" name="bmi" value="0" />
+</p>
+<p><input type="button" value="Calculate" onclick="	document.bmiForm.bmi.value = calcBMI(document.bmiForm.weight.value, document.bmiForm.height.value )" /></p>
+</form>
+
+</body>
+</html>

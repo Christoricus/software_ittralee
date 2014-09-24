@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+   
+    <meta charset='utf-8'>
+	<title>Overlap and Visibility</title>
+	
+	<style type="text/css">
+	.boxes {
+		position: absolute;
+		width: 100;
+		border: solid #000000 5px;
+		color: #000000;
+		}
+		
+	#box1 {
+		background-color: #ff0000;
+		top: 10px;
+		left: 10px;
+		z-index: 3;
+		}
+		
+	#box2 {
+		background-color: #ffff00;
+		top: 30px;
+		left: 30px;
+		z-index: 2;
+		}
+		
+	#box3 {
+		background-color: #0000ff;
+		top: 50px;
+		left: 50px;
+		z-index: 1;
+		}
+	</style>
+</head>
+
+<body>
+<div class="boxes" id="box1">
+<h2>Box #1</h2>
+</div>
+
+<div class="boxes" id="box2">
+<h2>Box #2</h2>
+</div>
+
+<div class="boxes" id="box3">
+<h2>Box #3</h2>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title></title>
+    <meta charset='utf-8'>
+   
+<script>   
+   function calcarea(l,b,h,w)
+{
+ 
+var vol = l*b*h;
+var result=0;
+(w<=vol)?result="yes":result="no";
+ return result;
+}
+</script>
+ 
+
+   
+   
+  </head>
+  <body>
+  <form name = "formone">
+
+
+
+l: <input type = "text" name  = "length" >
+b: <input type = "text" name  = "breath" >
+h: <input type = "text" name  = "height" >
+
+
+water : <input type = "text" name  = "water" >
+<input type = "button" value = "volume" onclick="var result = calcarea(parseInt(document.formone.length.value),parseInt(document.formone.breath.value),parseInt(document.formone.height.value),parseInt(document.formone.water.value));document.formone.result.value=result;">
+<br>
+Will the box take the water ?<input type = "text" name  = "result" >
+
+<p>
+
+
+
+</form>
+  </body>
+</html>

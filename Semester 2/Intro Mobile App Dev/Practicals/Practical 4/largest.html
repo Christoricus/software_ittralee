@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="physics.css" />
+
+   
+
+</head>
+<body>
+
+   <script type="text/javascript">
+        /* <![CDATA[ */
+        var numberslist = new Array(5);
+        var largest=0; 
+        var count = 0;
+            while (count < numberslist.length) {
+               numberslist[count]=window.prompt("Enter a number");
+                ++count;
+               }
+                  count=0;
+              while (count < numberslist.length) {  
+                if (numberslist[count] > largest)
+                    { largest = numberslist[count] }
+                    count++;  
+                     }
+               window.alert(largest) ;
+
+        /* ]]> */
+    </script>
+</body>
+</html>

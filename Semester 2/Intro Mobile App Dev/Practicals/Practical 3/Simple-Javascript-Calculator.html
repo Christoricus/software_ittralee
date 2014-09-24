@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Built in Functions</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+<script language="javascript" type="text/javascript">
+function multiply(){
+a=Number(document.calculator.number1.value);
+b=Number(document.calculator.number2.value);
+c=a*b;
+document.calculator.total.value=c;
+}
+
+
+
+function addition(){
+a=Number(document.calculator.number1.value);
+b=Number(document.calculator.number2.value);
+c=a+b;
+document.calculator.total.value=c;
+}
+
+
+
+function subtraction(){
+a=Number(document.calculator.number1.value);
+b=Number(document.calculator.number2.value);
+c=a-b;
+document.calculator.total.value=c;
+}
+
+function division(){
+a=Number(document.calculator.number1.value);
+b=Number(document.calculator.number2.value);
+c=a/b;
+document.calculator.total.value=c;
+}
+
+function modulus(){
+a=Number(document.calculator.number1.value);
+b=Number(document.calculator.number2.value);
+c=a%b;
+document.calculator.total.value=c;
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- Opening a HTML Form. --> 
+<form name="calculator">
+
+<!-- Here user will enter 1st number. --> 
+Number 1: <input type="text" name="number1"> <br> 
+
+<!-- Here user will enter 2nd number. --> 
+Number 2: <input type="text" name="number2"> <br>
+
+<!-- Here result will be displayed. --> 
+Get Result: <input type="text" name="total"> <br>
+
+<!-- Here respective button when clicked, calls only respective artimetic function. --> 
+<input type="button" value="ADD" onclick="addition();">
+<input type="button" value="SUB" onclick="subtraction();">
+<input type="button" value="MUL" onclick="multiply();">
+<input type="button" value="DIV" onclick="division();">
+<input type="button" value="MOD" onclick="modulus();">
+
+</form>
+
+</body>
+</html>

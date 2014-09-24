@@ -1,0 +1,13 @@
+
+
+Create an array that contains the titles of 4 
+courses - you hard code this in.
+
+Create a seperate array that takes the student 
+numbers on each of these courses. 
+We are presuming that the user enters these
+in the same order as the first array.
+
+Find the largest number in the students 
+array and using the index of that value output 
+the course title from the first array.

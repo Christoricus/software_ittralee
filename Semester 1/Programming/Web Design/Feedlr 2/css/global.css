@@ -1,0 +1,110 @@
+
+/* BODY --------------------------------------------------------*/
+
+body {
+	color: #696969;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	font-size: 100%;
+}
+
+#wrapper {
+	width: 81%;
+	margin: auto;
+	background-color: #444343;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 5px 5px 5px 5px black;
+	font-size: 14px;
+}
+
+#content {
+	background-color: #f4e9e9;
+	border-radius: 0px 0px 15px 15px;
+	width: 100%;	
+}
+
+#about {
+	background: #ffffff;
+	width: 90%;
+	margin: auto;
+	text-align: left;
+	font-family: inherit;
+	font-size: 15px;
+	padding-bottom: 20px;
+	
+}
+
+#smpage {
+	width: 95%;
+	margin: auto;
+	background: #fff;
+}
+
+.line-divider{
+	clear: both;
+	border-bottom: 1px solid #d7d7d7;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+/* TITLE --------------------------------------------------------*/
+
+#page-title {
+	overflow: hidden;
+	height: 90px;
+	background: #f2f1f1;
+}
+
+#page-title .title {
+	display: block;
+	float: left;
+	font-family: fantasy, arial, helvetica ,serif;
+	font-size: 30px;
+	line-height: 90px;
+	margin-left: 30px;
+}
+
+/* HEADERS --------------------------------------------------------*/
+
+h1,h2,h3,h4,h5,h6{ 
+	line-height: 1.4em;
+	font-family: 'Times New Roman', arial, helvetica, serif; 
+	font-weight: lighter;
+}
+
+h1{ font-size: 30px; }
+
+h2{ font-size: 28px; }
+
+h3{ font-size: 26px; }
+
+h4{ font-size: 24px; }
+
+h5{ font-size: 22px; }
+
+h6{ font-size: 20px; }
+
+/* HEADERS --------------------------------------------------------*/
+.line-divider {
+	border-bottom: 1px solid #272323;
+}
+
+.abtus {
+	text-decoration: underline;
+	text-shadow: 1px 1px 1px black;
+}
+
+.sitemp {
+	font-size: 30px;
+	font-family: inherit;
+	font-style: italic;
+	padding-bottom: 50px;
+
+}
+.sitemp a {
+	text-decoration: none;
+	color: #000;
+}
+.sitemp:hover {
+	text-decoration: underline;
+	color: #ffd800;
+}

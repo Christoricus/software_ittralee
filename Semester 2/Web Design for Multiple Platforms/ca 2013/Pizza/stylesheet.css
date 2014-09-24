@@ -1,0 +1,60 @@
+/* Big J's Deep Dish Pizza */
+
+h1 {     
+   text-align :center;
+  padding: 12px;
+    color:#ffffff;
+  margin: 0;
+   background:#000000;
+
+  }
+
+ol{
+margin-left:20px;
+}
+
+#contact {
+
+  text-align: right;
+  padding-left:8px;
+   padding-bottom:8px;
+     background:#000000;
+     color:#ffffff;
+     margin-bottom:0px;
+  }
+
+  
+  ol{
+     margin-left:50px;
+  
+  
+  }
+  .para{
+
+ 
+    
+  padding-left: 20px;
+    padding-right: 20px;  
+  }
+#box {
+
+  border: 3px solid #000000;
+
+  width:480px;
+
+  margin-left: auto; 
+
+  margin-right: auto;
+
+  background:#e0e0e0;
+
+  }
+
+#words {
+
+  text-align: center;
+  font-weight:bold;
+
+  
+
+  }

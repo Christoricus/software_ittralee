@@ -1,0 +1,15 @@
+h1 {font-size:24px;
+	font-style: italic; 
+	font-family:courier;
+	color:green
+ }
+
+h2 {color: blue; 
+	background-color: #ff0000;
+	}
+body {color: red; 
+	  background-color: #ffffff
+}
+p {color: black; 
+   background-color: #ff99cc;
+}

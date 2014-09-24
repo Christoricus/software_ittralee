@@ -1,0 +1,56 @@
+.access_aid {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 0;
+    padding-top: 40px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+	font-size:1.2em;
+	background-color:green;
+}
+
+#main_nav:target {
+    display: block;
+}
+
+#main_nav {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #fff;
+	border:1px solid #ccc;
+	border-radius:25px;
+	padding:0;
+	margin-left:0;
+	
+}
+#main_nav:target ul li{
+    display: block;
+	padding:2px;
+	
+   
+}
+#main_nav:target ul {
+  
+	margin:5px;
+	padding:5px;
+	
+   
+}
+.access_aid {
+    /* In addition to the existing declarations... */
+    background: white 10px 10px / 20px 20px no-repeat;
+}
+
+#access_nav {
+    background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
+    background-image: repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
+}
+
+#access_top {
+    background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), linear-gradient(-45deg, white 13px, #ccc 13px, #ccc 15px, white 0);
+}

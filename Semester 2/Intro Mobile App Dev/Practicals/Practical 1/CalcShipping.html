@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+   <title>Calculate Shipping and Handling</title>
+    <meta charset='utf-8'>
+    
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+</head>
+<body>
+<script type="text/javascript">
+
+
+  var purchase = 24;
+  var salesTotal = 0;
+  (purchase <= 25) ? salesTotal = purchase + 1.5 : salesTotal = purchase + (purchase * 10 / 100);
+
+  alert("Your sales total with shipping and handling is " + salesTotal.toFixed(2));
+
+
+</script>
+
+
+</body>
+</html>

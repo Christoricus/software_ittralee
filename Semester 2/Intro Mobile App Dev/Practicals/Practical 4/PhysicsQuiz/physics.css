@@ -1,0 +1,86 @@
+BODY
+{
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Tahoma;
+    font-size: 11px margin-left: 0px;
+    margin-top: 0px;
+}
+P
+{
+    color: #ffffff;
+    font-family: Tahoma;
+    font-size: 11px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+p.c1
+{
+    text-align: right;
+}
+
+.noBorder
+{
+    border-color: transparent;
+    border-width: 0;
+}
+TABLE.Top
+{
+    border-bottom: #000000 px;
+    border-left: #000000 1px solid;
+    border-right: #000000 1px solid;
+    border-top: #000000 1px solid;
+}
+TABLE.Middle
+{
+    border-bottom: #000000 1px;
+    border-left: #000000 1px solid;
+    border-right: #000000 1px solid;
+    border-top: #000000 1px;
+}
+TABLE.Bottom
+{
+    border-bottom: #000000 1px solid;
+    border-left: #000000 1px solid;
+    border-right: #000000 1px solid;
+    border-top: #000000 1px;
+}
+TD.VSeparatorBack
+{
+    background-image: url(images/VSeparatorBack.gif);
+    background-repeat: repeat-y;
+}
+TD.ImageBack
+{
+    background-color: #000000;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.NoBreakBeforeAfter
+{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+TD.Color1
+{
+    background-color: #000000;
+}
+TD.Color2
+{
+    background-color: #000000;
+    background-image: url(images/VShadowBack.gif);
+    background-position: right center;
+    background-repeat: repeat-y;
+}
+.Indented24R
+{
+    margin-right: 24px;
+}
+.Indented4L
+{
+    margin-left: 4px;
+}
+.Indented44R
+{
+    margin-right: 44px;
+}

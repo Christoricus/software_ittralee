@@ -1,0 +1,64 @@
+/* Lakeland Reeds Bed and Breakfast */
+
+h1, h2 {
+
+  text-align: center;
+
+  font-family: georgia, "times new roman", times, serif;
+
+  }
+
+h1 {
+
+  margin: 0;
+
+  font-size: 32px;
+
+  color: white;
+
+  background: #005200;
+
+  padding:4px;
+
+  }
+
+h2 {
+
+  font-size: 24px;
+
+  }
+
+#box {
+
+  border: 4px solid black;
+
+  width: 640px;
+
+  padding: 16px;
+
+  margin-left: auto; 
+
+  margin-right: auto;
+
+  font-family: tahoma, arial, helvetica, sans-serif;
+
+  background: #ffffb9;
+
+  }
+
+#contact {
+
+  text-align: right;
+
+  padding:8px;
+
+  width: 200px;
+
+  margin-left: auto;
+
+  margin-bottom: 0;
+
+  background: #daa520;
+
+  }
+

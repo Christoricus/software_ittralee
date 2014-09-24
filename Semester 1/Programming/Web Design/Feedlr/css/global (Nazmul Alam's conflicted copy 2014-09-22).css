@@ -1,0 +1,17 @@
+
+/* BODY --------------------------------------------------------*/
+
+body {
+	color: #696969;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	font-size: 100%;
+}
+
+#wrapper {
+	width: 81%;
+	margin: auto;
+	background-color: #444343;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 5px 5px 5px 5px black;
+	font-size: 14px;
+}

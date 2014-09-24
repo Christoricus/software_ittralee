@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Adding a dynamic "Back To Top" floating button with smooth scroll</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+	<style>
+		div#page {
+			max-width: 900px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 20px;
+		}
+		
+		.back-to-top {
+			position: fixed;
+			bottom: 2em;
+			right: 0px;
+			text-decoration: none;
+			color: #000000;
+			background-color: rgba(235, 235, 235, 0.80);
+			font-size: 12px;
+			padding: 1em;
+			display: none;
+		}
+
+		.back-to-top:hover {	
+			background-color: rgba(135, 135, 135, 0.50);
+		}	
+	</style>
+
+</head>
+<body>
+    <div id="page">
+        <!-- [banner] -->
+        <header id="banner">
+            <hgroup>
+                <h1>Adding a dynamic "Back To Top" floating button with smooth scroll</h1>
+            </hgroup>
+        </header>
+        <!-- [content] -->
+        <section id="content">
+			<h1>The first heading</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec felis sed velit auctor luctus id quis arcu. Ut dui augue, euismod nec justo a, pretium consequat nisi. Vivamus dictum nec quam in sollicitudin. Nullam non augue at risus condimentum consequat eu ut sem. Ut quis tortor quam. Nulla ullamcorper in metus egestas sagittis. In rhoncus feugiat sagittis. Cras eu arcu dui. Nulla non urna varius, facilisis sapien quis, tristique urna.
+	
+            </p>
+			<h2>The first sub-heading</h2>
+            <p>
+                Duis tincidunt eleifend felis ac porttitor. Aenean facilisis elit eget orci vulputate scelerisque. Nulla justo sem, fringilla nec gravida vel, sollicitudin vitae libero. Donec vitae consequat lorem. Cras eros nunc, varius id dictum sit amet, posuere quis augue. Vivamus quis ipsum eget lectus porta vestibulum. Sed malesuada id orci eu rhoncus. Proin eleifend lacus non libero facilisis interdum.
+	
+            </p>
+			<h2>The second sub-heading</h2>
+            <p>
+                Nulla luctus lorem et justo posuere, vitae ornare elit accumsan. Donec semper tincidunt lacus ut sagittis. Donec nec adipiscing nunc, quis rutrum tortor. Vivamus aliquam orci nulla, non ornare mauris eleifend et. Aliquam erat volutpat. Phasellus id nunc sapien. Suspendisse luctus pharetra lorem, quis scelerisque eros ultricies in. Vivamus hendrerit fermentum justo eget sagittis. Pellentesque cursus at turpis id cursus. Pellentesque sed rhoncus enim. Nam et ante feugiat, luctus enim in, tincidunt lectus. In feugiat neque quam. Curabitur mi ante, dictum non aliquam placerat, suscipit sed sem. Integer dictum, nulla vitae accumsan dignissim, augue justo laoreet diam, quis semper lectus orci vel mi.
+	
+            </p>
+			<h3>The first sub-sub-heading</h3>
+            <p>
+                Vestibulum mollis elementum libero a blandit. Fusce placerat odio quis euismod elementum. Maecenas rhoncus quam viverra odio fringilla blandit. Curabitur erat mi, malesuada ac tempor eu, tincidunt vitae erat. Nunc consequat faucibus feugiat. Integer ornare dui metus, sed consectetur erat vulputate a. Sed porttitor eu magna in aliquet. Cras quis tempus lacus, ac fermentum lorem.
+	
+            </p>
+			<h1>The second heading</h1>
+            <p>
+                Nullam dignissim nibh ac eros iaculis, quis aliquam nibh lacinia. Donec et ullamcorper nunc. Sed convallis aliquet ullamcorper. Donec non leo enim. Ut orci ante, viverra fringilla lorem nec, pretium volutpat lorem. Phasellus elit arcu, posuere at nibh at, facilisis adipiscing dolor. Duis hendrerit metus at turpis congue ornare. Aliquam orci nisi, malesuada at adipiscing non, pharetra a lectus. Mauris in rhoncus ipsum, et sagittis nulla. Duis laoreet luctus lorem, at malesuada sem bibendum at. Pellentesque ultrices massa eget lacus tempus, id ornare lacus fermentum. Sed id fermentum tellus. Suspendisse tincidunt posuere arcu quis fermentum.
+	
+            </p>
+			<h2>The third sub-heading</h2>
+            <p>
+                Phasellus vitae lacinia sapien. Nam eget congue lorem. Donec viverra tortor eget tellus iaculis interdum. Vivamus sollicitudin egestas auctor. Vivamus sit amet justo sit amet eros sodales egestas. Nulla nec pharetra metus. Integer rutrum, ipsum in dignissim scelerisque, arcu est adipiscing tortor, nec varius eros mauris vel augue. In condimentum lobortis eros, sed facilisis neque imperdiet vel. Nullam ut commodo lectus, a luctus mi. Aliquam varius quis tortor a interdum. Aliquam erat volutpat. Nam pellentesque augue enim, eget posuere mi ultrices sodales. Vivamus vel varius quam. Donec sed ante placerat sapien consequat facilisis. Fusce vestibulum ipsum urna, nec tincidunt lacus hendrerit quis. Donec ornare dignissim risus.
+	
+            </p>
+			<h2>The fourth sub-heading</h2>
+            <p>
+                Ut mauris mauris, porta bibendum dictum id, porttitor eu odio. Nam posuere in dui vitae pellentesque. Praesent commodo eros mattis posuere hendrerit. Suspendisse felis tellus, laoreet vitae erat non, laoreet gravida quam. Phasellus a augue non leo venenatis tempus. Curabitur ornare purus a mollis vulputate. Quisque vulputate euismod enim sed elementum. Duis id urna iaculis felis consequat vulputate. Mauris sollicitudin, leo eu sollicitudin porttitor, purus lacus sodales ipsum, vitae lobortis velit libero at libero.
+	
+            </p>
+			<h1>The third heading</h1>
+            <p>
+                Quisque iaculis magna ac risus posuere ultricies. Sed tincidunt, sem ac pellentesque fringilla, sapien purus sagittis odio, eget aliquam ante lorem ac risus. In euismod dignissim leo ut eleifend. Proin accumsan velit quam. Phasellus sollicitudin nulla ligula, sit amet mollis lectus pellentesque consectetur. Nunc non dictum ante, fringilla lobortis nulla. Nullam ullamcorper volutpat velit, ut laoreet justo pellentesque ornare. Praesent aliquet eros eu magna sodales, ac pharetra erat dignissim. Nulla pulvinar neque at fermentum eleifend.
+	
+            </p>
+			<h2>The fifth sub-heading</h2>
+            <p>
+                Praesent dictum interdum condimentum. Suspendisse in tortor blandit, lobortis libero eu, cursus libero. Donec vulputate ligula sit amet arcu porta imperdiet. Nam sodales, justo eu eleifend placerat, dui eros suscipit mi, quis congue dolor velit vitae nisi. Pellentesque mollis felis est. Etiam vitae justo laoreet, rutrum felis sed, porttitor dui. Sed cursus tincidunt turpis. Maecenas gravida commodo urna eget hendrerit. Ut suscipit mi sit amet turpis euismod, luctus suscipit turpis egestas.
+	
+            </p>
+			<h1>The fourth heading</h1>
+            <p>
+                Mauris malesuada eros ac nisl pretium, at vehicula sem porttitor. Vestibulum porta erat leo, nec posuere enim pellentesque vel. Praesent libero est, laoreet quis scelerisque nec, egestas vel enim. Vivamus quis vulputate sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus consequat ligula lectus, sed fermentum elit auctor vitae. Duis iaculis sagittis est sit amet semper. Morbi rutrum fermentum vulputate. Proin tincidunt elementum sem, a faucibus dui malesuada sit amet. Vivamus vel enim laoreet, iaculis nunc ac, tristique nisl. Nulla consequat arcu et dolor porta, non ullamcorper augue pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer sed nibh lectus. Sed pulvinar nunc magna, eget placerat mi pharetra ac. Vestibulum hendrerit, nulla nec vestibulum aliquam, arcu tortor blandit ipsum, eget sollicitudin nulla tellus quis libero. Duis sodales fringilla lacus vel auctor.
+	
+            </p>
+			<h2>The sixth sub-heading</h2>
+            <p>
+                Vivamus erat turpis, condimentum vitae neque sit amet, tincidunt malesuada odio. Mauris mollis ante vitae quam condimentum lobortis. Integer sodales odio sit amet metus tempus, vel dignissim libero sagittis. Suspendisse ornare libero elit, quis sollicitudin leo pellentesque id. Sed pharetra mattis sapien nec condimentum. Mauris convallis arcu eget massa fringilla, nec pellentesque dolor semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum vitae odio a sem iaculis tempor. Fusce placerat viverra lorem mollis fermentum. Sed porta sit amet sapien eu venenatis.
+	
+            </p>
+			<h3>The second sub-sub-heading</h3>
+            <p>
+                Aenean ut ipsum ultrices, sollicitudin massa quis, bibendum magna. Sed id porttitor diam, et vestibulum tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus vel magna dolor. Etiam cursus nibh ligula, id vestibulum metus varius feugiat. Etiam vitae dolor ligula. Aliquam eu consectetur lorem. Quisque nulla nulla, facilisis semper laoreet non, eleifend in dolor.
+	
+            </p>
+			<a href="#" class="back-to-top">Back to Top</a>
+        </section>
+
+        <script>            
+			jQuery(document).ready(function() {
+				var offset = 220;
+				var duration = 500;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.back-to-top').fadeIn(duration);
+					} else {
+						jQuery('.back-to-top').fadeOut(duration);
+					}
+				});
+				
+				jQuery('.back-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+		</script>
+    </div>
+    <!-- [/page] -->
+</body>
+</html>

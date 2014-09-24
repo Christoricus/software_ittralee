@@ -1,0 +1,269 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0043)http://www.htmldog.com/techniques/showhide/ -->
+<!DOCTYPE html PUBLIC "" ""><HTML lang="en" dir="ltr"><HEAD><META 
+content="IE=11.0000" http-equiv="X-UA-Compatible">
+	 
+<META charset="utf-8">	 <TITLE>Show / Hide Navigation | HTML Dog</TITLE>	 
+<META name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		 <LINK href="Show%20-%20Hide%20Navigation%20%20HTML%20Dog_files/goldenjackal.css" 
+rel="stylesheet">	 <LINK href="Show%20-%20Hide%20Navigation%20%20HTML%20Dog_files/css.css" 
+rel="stylesheet">	 <LINK href="Show%20-%20Hide%20Navigation%20%20HTML%20Dog_files/css(1).css" 
+rel="stylesheet">	 <!--[if lt IE 9]><link href="/r10/damnyouGJ.css" rel="stylesheet"><script src="/r10/html5shiv.js"></script><![endif]-->
+	 
+<SCRIPT src="Show%20-%20Hide%20Navigation%20%20HTML%20Dog_files/codehighlighter.js"></SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.16428"></HEAD> 
+<BODY class="level2">
+<DIV id="dog_tag">
+<P><A href="http://www.htmldog.com/"><IMG width="80" height="58" alt="HTML Dog" 
+src="Show%20-%20Hide%20Navigation%20%20HTML%20Dog_files/logoNew.gif"><SPAN></SPAN></A></P></DIV>
+<P id="access_nav"><A href="http://www.htmldog.com/techniques/showhide/#main_nav">Skip 
+to navigation</A></P><NAV id="you_are_here"><A id="home_link" href="http://www.htmldog.com/">Home</A><SPAN> 
+→ </SPAN><A href="http://www.htmldog.com/techniques/">Techniques</A><SPAN id="yah_last"> 
+→ </SPAN></NAV><ARTICLE><HEADER>
+<DIV class="flowernum2 xflowerextra" id="flowerbreak"></DIV>
+<H1>Show / Hide Navigation</H1>
+<P>When web page space is at a premium, which it is in scenarios such as those 
+designed for use on mobile devices, you might want to hide things, such as your 
+navigation area, and show them only when visitors choose to see them.</P>
+<P>This article looks at two options for achieving this: using JavaScript, and 
+exploiting the CSS :target pseudo class. As an extra bell and/or whistle, it 
+includes “show” and “hide” icons made from CSS gradients instead of 
+images.</P><ASIDE class="flower" id="flower_primary"><A href="http://www.siteground.com/web-hosting.htm?afcode=4960306b51b3ed1ddecbf83b3076ee11"><IMG 
+alt="SiteGround Web Hosting" src="Show%20-%20Hide%20Navigation%20%20HTML%20Dog_files/sg_300_2.gif"></A></ASIDE></HEADER><SECTION 
+id="main_content">
+<P>These techniques demonstrate a simple and effective way to increase the 
+usability of a page and they manipulate accessibility considerations that are 
+useful to have regardless of the show / hide quest.</P><FIGURE 
+class="note shot">
+<DIV><IMG width="500" height="307" src="Show%20-%20Hide%20Navigation%20%20HTML%20Dog_files/showhide.jpg"></DIV><FIGCAPTION>HTML 
+Dog on mobile: before and after the navigation button is 
+pressed.</FIGCAPTION></FIGURE>
+<H2>The Markup</H2>
+<P>We’re going to start with a typical page structure:</P>
+<PRE><CODE class="html">
+&lt;body id="body"&gt;
+
+&lt;p&gt;&lt;a href="#main_nav" id="access_nav" class="access_aid"&gt;Skip to navigation&lt;/a&gt;&lt;/p&gt;
+
+&lt;article&gt;
+    &lt;!-- main content here --&gt;
+&lt;/article&gt;
+
+&lt;nav id="main_nav"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href=""&gt;This&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;That&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=""&gt;The other&lt;/a&gt;&lt;/li&gt;
+        &lt;!-- etc. --&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;&lt;a href="#body" id="access_top" class="access_aid"&gt;Skip to top&lt;/a&gt;&lt;/p&gt;
+&lt;/nav&gt;
+
+&lt;/body&gt;
+</CODE></PRE>
+<P>Note that we have the accessibility considerations of a “Skip to navigation” 
+link and a “Skip to top” link. These are beneficial for those using non-visual 
+browsers (such as screen readers) or those who are unable to use a pointing 
+device (and may be using a keyboard-like tabbing system, for example). These 
+links will, however, prove additionally useful in our show / hide technique.</P>
+<H2>Showing and Hiding</H2>
+<P>Cutting to the chase and keeping it simple for the time being, we’re going to 
+have our page start out with a visible content area and hidden navigation. So we 
+can start with this CSS:</P>
+<PRE><CODE class="css">
+#main_nav {
+    display: none;
+}
+</CODE></PRE>
+<P>In all likelihood you probably won’t actually want your main web site to 
+start out like this — you would usually want the navigation to be available for 
+all to see. You can target this hidden navigation specifically in instances of 
+smaller screens, though, using media queries. In this way, such an approach 
+comes into play nicely when adapting a design for mobile devices.</P><ASIDE 
+class="note warning">
+<P>What lies ahead won’t work on older browsers. The JavaScript, the target, and 
+the gradients, will all fall down on Internet Explorer version 8 and below. 
+Super. While there are work-arounds, we’re keeping things simple and 
+<EM>modern</EM>, and keeping in mind that this technique is primarily useful for 
+mobile browsers, which are reliably capable.</P></ASIDE>
+<H3>JavaScript</H3>
+<P>The most obvious way to switch the display of the navigation on and off is to 
+use <EM>JavaScript</EM>. The following example can be used as one way to add and 
+remove a class attribute (in this case “with_nav”) to the <A class="acode" href="http://www.htmldog.com/reference/htmltags/body/"><CODE>body</CODE></A> 
+when the “Skip to navigation” link is clicked:</P>
+<PRE><CODE class="javascript">
+var nav = document.getElementById('access_nav'),
+    body = document.body;
+
+nav.addEventListener('click', function(e) {
+    body.className = body.className? '' : 'with_nav';
+    e.preventDefault();
+});
+</CODE></PRE>
+<P>In short, this will:</P>
+<UL>
+  <LI>Wait for the element with ID “access_nav” to be clicked</LI>
+  <LI>Add the class “with_nav” to the body (OR remove it, if it’s already 
+  there)</LI>
+  <LI>Prevent the actual destination of the link from being followed</LI></UL>
+<P>The page can then be styled appropriately, fundamentally including:</P>
+<PRE><CODE class="css">
+.with_nav #main_nav {
+    display: block;
+}
+</CODE></PRE>
+<H3>:target</H3>
+<P>Alternatively, we can avoid JavaScript all together. The <CODE>:target</CODE> 
+pseudo class can be used to style a <EM>target element</EM> in a page, that is, 
+an HTML element with an ID (such as “blancmange”) that is linked to (with 
+something like “raspberry.html#blancmange”). In this case, our target element is 
+that with the ID “main_nav” — our main navigation area. So when someone selects 
+the “Skip to navigation” link, the page will jump to “main_nav” and we can then 
+style that box differently:</P>
+<PRE><CODE class="css">
+#main_nav:target {
+    display: block;
+}
+</CODE></PRE>
+<P>Now, not only will the page jump to the suddenly appearing navigation area 
+when “Skip to navigation” is selected, when “Skip to top” Is subsequently 
+selected, the navigation will disappear again. This is because “main_nav” would 
+no longer be the target anchor.</P>
+<H2>Styling</H2>
+<P>There are plenty of things you can do with that basic concept, but let’s fix 
+up an obvious issue: we don’t want the page to jump down, we want the navigation 
+to majestically appear near to the instigating link. One obvious solution is to 
+simply position the navigation at the top of the page:</P>
+<PRE><CODE class="css">
+#main_nav {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+</CODE></PRE>
+<H3>Buttons with gradients</H3>
+<P>We can pretty this up in plenty of ways — colors, whitespace, shadows, 
+transitions, etc. — but there’s one last essential thing that isn’t quite right: 
+the accessibility link “Skip to…” text doesn’t make much sense when referring to 
+“show” and “hide”. We don’t want to change the text of the links because they’re 
+well worded for their original accessibility purpose. But we can replace them 
+with icons fitting to our task. So, just to be posh, we’ll finish off by styling 
+our show / hide buttons with icons made from linear gradients instead of 
+background images.</P><FIGURE class="note shot">
+<DIV><IMG width="144" height="82" src="Show%20-%20Hide%20Navigation%20%20HTML%20Dog_files/showhide_buttons.png"></DIV><FIGCAPTION>The 
+buttons. Following conventions: parallel lines for “show” and a cross for 
+“hide”.</FIGCAPTION></FIGURE>
+<P>Let’s get some basics out of the way first, though. We can prepare our links 
+to be more button-like and we can place them in better positions:</P>
+<PRE><CODE class="css">
+.access_aid {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 0;
+    padding-top: 40px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+</CODE></PRE>
+<P>This will push our link boxes to the top right of their respective parent 
+boxes, turn them into squares, shove the text out of the way, and slap a thin 
+border around them.</P>
+<P>Now to create those icons. We’re going for a series of horizontal lines to 
+represent “show” (this being a common convention in suggesting “navigation”) and 
+a cross to represent “hide” (being an even more ubiquitous symbol for 
+“close”):</P>
+<PRE><CODE class="css">
+.access_aid {
+    /* In addition to the existing declarations... */
+    background: white 10px 10px / 20px 20px no-repeat;
+}
+
+#access_nav {
+    background-image: -webkit-repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
+    background-image: repeating-linear-gradient(#ccc, #ccc 2px, #fff 2px, #fff 4px);
+}
+
+#access_top {
+    background-image: linear-gradient(45deg, transparent 13px, #ccc 13px, #ccc 15px, transparent 0), linear-gradient(-45deg, white 13px, #ccc 13px, #ccc 15px, white 0);
+}
+</CODE></PRE>
+<P>To break this down, the code:</P>
+<UL>
+  <LI>Sets the background position to be a single instance, 10 pixels in from 
+  the left, 10 pixels down from the top, and to be 20 pixels by 20 pixels in 
+  size.</LI>
+  <LI>Adds a repeating horizontal gray and white linear gradient for the “show” 
+  button.</LI>
+  <LI>Adds two diagonal gradients for “hide”, one for each line that makes up 
+  the cross.</LI></UL>
+<P>Bam. Easy.</P><ASIDE class="note mag">
+<P>The basic principles outlined here, including using <CODE>:target</CODE> and 
+CSS gradient buttons, are used by this web site when viewed on small-screen 
+devices.</P></ASIDE>
+<H2>Live!</H2>
+<P>Have a gander at <A href="http://www.htmldog.com/examples/showhide1.html">the 
+JavaScript example</A> and <A href="http://www.htmldog.com/examples/showhide2.html">the 
+target example</A> to see it all work together. There are a few additional licks 
+of paint in there, but the purpose of these, as with all of the examples on this 
+site, is to show a bare-bones proof of concept. Tinker.</P><ASIDE id="flowers">
+<DIV class="flower">
+<SCRIPT src="Show%20-%20Hide%20Navigation%20%20HTML%20Dog_files/adsbygoogle.js" async=""></SCRIPT>
+		 <INS class="adsbygoogle" data-ad-slot="2044729648" data-ad-client="ca-pub-2105257479089713"></INS>
+		 
+<SCRIPT>(adsbygoogle = window.adsbygoogle || []).push({})</SCRIPT>
+	 </DIV></ASIDE></SECTION><FOOTER id="related">
+<H2>Related pages</H2>
+<UL>
+  <LI><A 
+  href="http://www.htmldog.com/guides/javascript/intermediate/events/">Events 
+  and Callbacks</A> (JavaScript Intermediate Tutorial)</LI>
+  <LI><A 
+  href="http://www.htmldog.com/guides/css/advanced/gradients/">Gradients</A> 
+  (CSS Advanced Tutorial)</LI></UL>
+<H3>Working Examples</H3>
+<UL>
+  <LI><A href="http://www.htmldog.com/examples/showhide1.html">Show / Hide 
+  Navigation (JavaScript)</A></LI>
+  <LI><A href="http://www.htmldog.com/examples/showhide2.html">Show / Hide 
+  Navigation (target)</A></LI></UL></FOOTER></ARTICLE><NAV id="main_nav">
+<UL>
+  <LI id="li_tut"><A href="http://www.htmldog.com/guides/">Tutorials</A>
+  <UL>
+    <LI><A href="http://www.htmldog.com/guides/html/">HTML</A></LI>
+    <LI><A href="http://www.htmldog.com/guides/css/">CSS</A></LI>
+    <LI><A 
+  href="http://www.htmldog.com/guides/javascript/">JavaScript</A></LI></UL></LI>
+  <LI id="li_tech"><A 
+  href="http://www.htmldog.com/techniques/">Techniques</A></LI>
+  <LI id="li_eg"><A href="http://www.htmldog.com/examples/">Examples</A></LI>
+  <LI id="li_ref"><A href="http://www.htmldog.com/reference/">References</A>
+  <UL>
+    <LI><A href="http://www.htmldog.com/reference/htmltags/">HTML Tags</A></LI>
+    <LI><A href="http://www.htmldog.com/reference/cssproperties/">CSS 
+    Properties</A></LI></UL></LI>
+  <LI class="subli superli" id="li_wh"><A href="http://www.htmldog.com/webhosting/">Web 
+  Hosting</A></LI>
+  <LI class="subli superli"><A href="http://www.htmldog.com/about/">About 
+  Us</A></LI>
+  <LI class="subli"><A href="http://www.htmldog.com/linkto/">Link to Us</A></LI>
+  <LI class="subli" id="li_smap"><A href="http://www.htmldog.com/sitemap/">Site 
+  Map</A></LI>
+  <LI id="access_top"><A href="http://www.htmldog.com/techniques/showhide/#">↑ 
+  Top</A></LI></UL>
+<P id="tweet"><A href="https://twitter.com/htmldog">Tweet @htmldog</A></P></NAV>
+<FORM id="search" action="/search/">
+<FIELDSET><LABEL for="morombe">Search: 
+</LABEL><INPUT name="q" id="morombe"><INPUT type="submit" value="Search"></FIELDSET></FORM><FOOTER 
+id="site_footer">
+<P>© 2003–2014.</P>	 
+<P><A href="http://www.htmldog.com/terms/">Terms of use</A>.</P>	 
+<P>Hosted by <A href="http://www.siteground.com/index.htm?afcode=4960306b51b3ed1ddecbf83b3076ee11">SiteGround</A>.</P> 
+<P id="flogo"><A href="http://www.htmldog.com/"><IMG width="90" height="18" alt="HTML Dog" 
+src="Show%20-%20Hide%20Navigation%20%20HTML%20Dog_files/htmldog90_lg.gif"></A></P> 
+</FOOTER></BODY></HTML>

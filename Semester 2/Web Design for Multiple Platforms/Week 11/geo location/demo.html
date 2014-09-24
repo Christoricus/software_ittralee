@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+  <title>green layout</title>
+    <meta charset='utf-8'>
+	
+		<script type="text/javascript">
+
+			if (navigator.geolocation)
+			{ 
+				  navigator.geolocation.getCurrentPosition(showPosition);	
+			}	
+			else
+			{
+				document.getElementById("demo").innerHTML="Geolocation is not supported by this browser.";
+			}
+		  
+		  
+			function showPosition(position)
+			{
+				document.getElementById("demo").innerHTML="Latitude: " + position.coords.latitude + 
+				"<br>Longitude: " + position.coords.longitude;	
+			}
+		</script>
+	
+	</head>
+	
+	<body>
+
+
+<p id="demo"></p>
+
+
+
+
+</body>
+</html>
+
+
+

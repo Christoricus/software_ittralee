@@ -1,0 +1,33 @@
+body {
+	color: rgb(168, 168, 168); font-family: Verdana; background-color: rgb(102, 102, 102);
+}
+div.c9 {
+	text-align: left;
+}
+span.c8 {
+	color: rgb(168, 168, 168); font-family: Verdana; font-size: 70%;
+}
+div.c10 {
+	color: rgb(168, 168, 168); font-family: Verdana; font-size: 70%;
+}
+span.c7 {
+	color: rgb(75, 75, 75); font-family: Verdana; font-size: 70%;
+}
+td.c6 {
+	background-color: rgb(118, 118, 118);
+}
+td.c5 {
+	background-color: rgb(75, 75, 75);
+}
+input.c4 {
+	font-family: ar; font-size: 8pt;
+}
+select.c3 {
+	color: rgb(255, 255, 255); font-family: ar; font-size: 8pt;
+}
+td.c2 {
+	background-color: rgb(245, 83, 0);
+}
+table.c1 {
+	border-collapse: collapse;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Calculate Shipping and Handling</title>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function calcShipping() {
+  var salesCost = parseInt(document.sale.price.value);
+	var salesTotal = salesCost;
+  (salesCost <= 25) ? salesTotal += 1.5 :salesTotal += salesCost * 10 / 100;
+  window.alert("Your sales total with shipping and handling is $" + salesTotal);
+}
+/* ]]> */
+</script>
+</head>
+<body>
+<h1>Calculate Shipping and Handling</h1>
+<form action="" name="sale">
+<p>Purchase Price <input type="text" name="price" value="0" />&nbsp;
+<input type="button" value="Calculate Shipping and Handling" onclick="calcShipping()" /></p>
+</form>
+</body>
+</html>

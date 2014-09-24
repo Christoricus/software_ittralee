@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Don's Pizza</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="pizza.js">
+
+    </script>
+
+</head>
+<body>
+    <div id="main">
+        <div id="content">
+            <div id="menu">
+                <div style="height: 402px" align="right">
+                    <img alt="" src="images/logo.jpg" style="margin-right: 28px; margin-top: 31px" />
+                </div>
+            </div>
+            <div style="width: 401px; float: left">
+                <div class="wes1">
+                </div>
+                <div class="wes2">
+                    <div style="height: 186px">
+                        <img alt="" src="images/centerfoto.jpg" width="362" height="170" style="margin-top: 16px" /></div>
+                    <div style="height: 38px">
+                        <img alt="" src="images/menu.jpg" width="362" height="38" /></div>
+                    <div style="margin-left: 20px; margin-top: 10px; height: 270px">
+
+                        <script type="text/javascript">
+                            /* <![CDATA[ */
+                            /*
+                            JavaScript code for Chapter 1.
+                            The purpose of this code is simply to demonstrate
+                            how to add a script section to a Web page.
+                            */
+                            // Don Gosselin
+                            // January 27, 1965
+                            document.write("<p><strong>Today's special</strong>: ");
+                            document.write("buy a large meat lover's pizza<br />");
+                            document.write("and receive a free Caesar salad ");
+                            document.write("and two liters of Diet Pepsi!</p>");
+                            /* ]]> */
+                        </script>
+
+                        <form name="pizzaList" action="" method="get">
+                        <p>
+                            Click the buttons for a description of each pizza.</p>
+                        <p>
+                            <input type="radio" name="pizzas" onclick="document.pizzaList.pizzaDesc.value=vegetarian" />
+                            Vegetarian<br />
+                            <input type="radio" name="pizzas" onclick="document.pizzaList.pizzaDesc.value=hawaiian" />
+                            Hawaiian<br />
+                            <input type="radio" name="pizzas" onclick="document.pizzaList.pizzaDesc.value=meatLovers" />
+                            Meat Lovers<br />
+                            <input type="radio" name="pizzas" onclick="document.pizzaList.pizzaDesc.value=theWorks" />
+                            The Works<br />
+                            <input type="radio" name="pizzas" onclick="document.pizzaList.pizzaDesc.value=fourCheese" />
+                            Four Cheese</p>
+                        <p>
+                            <textarea name="pizzaDesc" cols="75" rows="20" style="background-color: Transparent;
+                                border: none; overflow: hidden; font: 10px tahoma; color: #3F3F3F"></textarea></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="wes3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="CR" align="center">
+        &copy; All rights reserved. Don's Pizza. 2010.</div>
+</body>
+</html>

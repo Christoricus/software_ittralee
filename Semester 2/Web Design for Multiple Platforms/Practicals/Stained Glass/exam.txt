@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>BlueRobot - </title>
+
+
+-------------------------------------------------------------------------
+
+Fonts used are: Arial, Verdana, Helvetica, Sans-Serif
+Stained glass ... Georgia, "Times New Roman", Times, serif
+
+colours used
+border colour #D2D2D2
+Stained glass ...  #3071B5
+main text #6C6C6C
+link colour #E57E32
+link when you move over it #93BC82
+
+
+------------------------------------------------
+
+Stained glass has always been a passion - It's often called 
+'painting with light'
+
+
+
+Greenart is the website for Scottish artist Richard Green. Richard is a 
+painter but now works with stained glass creating free standing stained glass 
+panels from his studio in Blackness, West Lothian. He also produces small pieces of glass jewellery.
+The <a href="http://www.green-art.co.uk/galleries.php?gallery=1">stained 
+glass galleries</a> on this website show Richard's latest work and there is also information on <a 
+href="http://www.green-art.co.uk/commissions.html">commissioning an artwork</a> from the artist. You can also <a 
+href="http://www.green-art.co.uk/richard-green.html">read more about Richard</a> 
+or how he <a href="http://www.green-art.co.uk/work.html">designs his stained 
+glass artwork</a> . 
+
+Copyright © 2005 Greenart. <a 
+href="mailto:info@green-art.co.uk">info@green-art.co.uk</a>
+<a href="http://www.trinityheriot.co.uk/">Web Design by Trinity Heriot.</a>

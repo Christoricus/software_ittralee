@@ -1,0 +1,21 @@
+
+
+
+
+division----	background: #fe9; font-family: "Palatino",serif;width: 400px;
+
+
+
+
+h1 ------- font-family: "Zapf Chancery",cursive;
+
+
+
+Le
+Meridien
+Etoile
+Paris
+
+81, Boulevard Gouvion St-Cyr, 75848 PARIS Cedex 17
+Tél.: (33) 01.40.68.34.34</a> - Télex: 651 179 F - Fax: (33) 01.40.68.31.31
+<a  href="http://www.lemeridien-paris.com/" >http://www.lemeridien-paris.com</a>

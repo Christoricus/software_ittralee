@@ -1,0 +1,69 @@
+body{background-color:#B00000; font: 10px tahoma; color:#3F3F3F; padding:0; margin:0 auto; background-image:url(images/bgbody.jpg)}
+
+img{border:0;}
+
+#main {width:537px; position:relative; margin: 0 auto; }
+
+#header{width:537px; height:571px; position:relative; margin: 0 auto;}
+
+#content{width:537px; height:571px; position:relative; margin: 0 auto; background-image:url(images/bgcenter.jpg); background-position:right top; background-repeat:repeat-y}
+#menu{width:136px; height:571px; background-image:url(images/bgmenu.jpg); background-repeat:no-repeat; float:left}
+.wes1{ width:401px; height:49px; background-image:url(images/bgtop.jpg)}
+.wes2{ width:401px; height:502px;}
+.wes3{ width:401px; height:20px; background-image:url(images/bgbottom.jpg)}
+.pla1{ height:166px; background-image:url(images/pla2.jpg); background-repeat:no-repeat}
+.pla2{ height:166px; background-image:url(images/pla1.jpg); background-repeat:no-repeat}
+#footer{width:537px; height:29px; position:relative; margin: 0 auto;}
+
+.list2
+{
+	background:url(images/keys.gif) no-repeat top left;
+	position:relative;
+	text-align:left;
+	width:333px;
+	height:16px;
+	padding-left:32px;
+	padding-top:4px;
+}
+
+
+
+.otstup { margin-right:5px}
+
+.post { font:11px/13px Tahoma; color:#CCC69F; text-decoration:none}
+a.post { font:11px/13px Tahoma; color:#CCC69F; text-decoration:underline}
+a.post:hover { font:11px/13px Tahoma; color:#CCC69F; text-decoration:none}
+
+.CR { font:10px/12px Tahoma; color:#FFFFFF; text-decoration:none}
+a.CR { font:10px/12px Tahoma; color:#FFFFFF; text-decoration:none}
+a.CR:hover { font:10px/12px Tahoma; color:#FFFFFF; text-decoration:underline}
+
+.usial { font:10px/12px Tahoma; color:#3F3F3F; text-decoration:none}
+a.usial { font:10px/12px Tahoma; color:#3F3F3F; text-decoration:none}
+a.usial:hover { font:10px/12px Tahoma; color:#3F3F3F; text-decoration:underline}
+
+.usial2 { font:10px/12px Tahoma; color:#DED3B7; text-decoration:none}
+a.usial2 { font:10px/12px Tahoma; color:#DED3B7; text-decoration:underline}
+a.usial2:hover { font:10px/12px Tahoma; color:#DED3B7; text-decoration:none}
+
+.green { font:11px/13px Tahoma; color:#9DB006; text-decoration:none}
+a.green { font:11px/13px Tahoma; color:#9DB006; text-decoration:underline}
+a.green:hover { font:11px/13px Tahoma; color:#9DB006; text-decoration:none}
+
+.keys { font:10px/13px Tahoma; color:#464545; text-decoration:none; text-transform:uppercase; font-weight:bold}
+a.keys { font:10px/13px Tahoma; color:#464545; text-decoration:none; text-transform:uppercase; font-weight:bold}
+a.keys:hover { font:10px/13px Tahoma; color:#464545; text-decoration:underline; text-transform:uppercase; font-weight:bold}
+
+.blue { font:11px/13px Tahoma; color:#00AACE; text-decoration:none}
+a.blue { font:11px/13px Tahoma; color:#00AACE; text-decoration:none}
+a.blue:hover { font:11px/13px Tahoma; color:#00AACE; text-decoration:underline}
+
+.oran { font:10px/12px Tahoma; color:#A10000; text-decoration:none}
+a.oran { font:10px/12px Tahoma; color:#A10000; text-decoration:none}
+a.oran:hover { font:10px/12px Tahoma; color:#A10000; text-decoration:underline}
+
+.more { font:11px/13px Tahoma; color:#902A02; text-decoration:none; font-weight:bold}
+a.more { font:11px/13px Tahoma; color:#902A02; text-decoration:underline; font-weight:bold}
+a.more:hover { font:11px/13px Tahoma; color:#902A02; text-decoration:none; font-weight:bold}
+
+.intext{font-family:tahoma, arial, times; font-size:11px; color:#333333; padding-left:4px; font-weight:bold}

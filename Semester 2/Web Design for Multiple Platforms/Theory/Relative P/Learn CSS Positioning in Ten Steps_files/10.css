@@ -1,0 +1,18 @@
+#example p {
+	display: none;
+}
+#div-1 {
+	position: relative; background-color: rgb(238, 238, 238);
+}
+#div-1a {
+	left: 10px; top: 20px; width: 40px; height: 40px; position: absolute; background-color: green;
+}
+#div-1b {
+	top: 20px; width: 40px; height: 40px; right: 10px; position: absolute; background-color: green;
+}
+#div-1c {
+	left: 20px; top: 120px; width: 360px; height: 20px; position: absolute; background-color: pink;
+}
+#div-before {
+	background-color: brown;
+}

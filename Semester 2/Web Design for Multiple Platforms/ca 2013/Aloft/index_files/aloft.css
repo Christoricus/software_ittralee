@@ -1,0 +1,27 @@
+BODY {
+	FONT-FAMILY: tahoma, arial, helvetica, sans-serif
+}
+H1 {
+	TEXT-ALIGN: center; FONT-FAMILY: georgia, "times new roman", times, serif
+}
+H2 {
+	TEXT-ALIGN: center; FONT-FAMILY: georgia, "times new roman", times, serif
+}
+H1 {
+	PADDING-BOTTOM: 12px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; MARGIN-BOTTOM: 0px; BACKGROUND: #422100; COLOR: white; FONT-SIZE: 32px; PADDING-TOP: 12px
+}
+H2 {
+	FONT-SIZE: 24px
+}
+H3 {
+	FONT-SIZE: 18px
+}
+#mainnav {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 6px; MARGIN: 0px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; BACKGROUND: #b8944d; PADDING-TOP: 6px
+}
+#box {
+	BORDER-BOTTOM: #422100 4px solid; BORDER-LEFT: #422100 4px solid; PADDING-BOTTOM: 16px; PADDING-LEFT: 16px; WIDTH: 640px; PADDING-RIGHT: 16px; BACKGROUND: #f0e68c; MARGIN-LEFT: auto; BORDER-TOP: #422100 4px solid; MARGIN-RIGHT: auto; BORDER-RIGHT: #422100 4px solid; PADDING-TOP: 16px
+}
+#contact {
+	PADDING-BOTTOM: 4px; PADDING-LEFT: 24px; PADDING-RIGHT: 24px; BACKGROUND: #b8944d; PADDING-TOP: 4px
+}

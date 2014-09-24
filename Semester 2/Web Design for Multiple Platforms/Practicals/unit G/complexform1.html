@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html lang='cs'>
+
+  <head>
+
+    <title></title>
+
+    <meta charset='utf-8'>
+
+<style type="text/css">
+
+legend, #submit {
+
+  font-family: CuprumFFURegular, georgia, "times new roman", times, serif;
+
+  }
+
+fieldset {
+
+  margin-bottom: 10px;
+
+   border: none;
+
+  border-radius: 10px;
+
+  padding: 12px 1em 0.5em 10px;
+
+  background: #ccc;
+
+  width:420px;
+
+  margin-left:auto;
+
+  margin-right:auto;
+
+  }
+
+
+
+input, textarea {
+
+ 
+
+  border-radius: 5px;
+
+  font-size: 1em;
+
+  }
+
+input:focus, textarea:focus {
+
+  background: #e3d5ba;
+
+  }
+
+
+
+#pad {
+
+
+
+padding: 12px 1em 0.5em 10px;
+
+}
+
+
+
+#textwidth{                                         
+  width: 420px;
+
+  }
+
+
+
+#but{
+
+  background: #e3d5ba;
+
+  font-size: 1em;
+
+  }
+
+
+
+h1{
+
+margin: 0;
+
+padding:0;
+
+font-size:30px;
+
+}
+
+h2{
+
+margin: 0;
+
+padding:0;
+
+font-size:20px;
+
+}
+
+h3{
+
+margin:0;
+
+
+
+}
+
+</style>
+
+  </head>
+
+  <body>
+
+
+
+
+
+<fieldset >
+
+            <h2>Contact Information</h2>
+
+            <label for="nameinput">
+
+              Name
+
+              <input type="text" name="name" id="textwidth" >
+
+            </label>
+
+            <label for="emailinput">
+
+              Email
+
+              <input type="email" name="email" id="textwidth" >
+
+            </label>
+
+            <label for="phoneinput">
+
+              Phone
+
+              <input type="text" name="phone" id="textwidth" >
+
+            </label>
+
+</fieldset>
+
+         
+
+          
+
+            <fieldset id="pad">
+
+			<h2> Reservation Information <br> <h3>Check-in date<h3></h2>
+
+              
+
+              <select id="inmonth" name="inmonth">
+
+                <option value="01">January</option>
+
+                <option value="02">February</option>
+
+                <option value="03">March</option>
+
+                <option value="04">April</option>
+
+                <option value="05">May</option>
+
+                <option value="06">June</option>
+
+                <option value="07">July</option>
+
+                <option value="08">August</option>
+
+                <option value="09">September</option>
+
+                <option value="10">October</option>
+
+                <option value="11">November</option>
+
+                <option value="12">December</option>
+
+              </select>
+
+              <select id="indate" name="indate">
+
+                <option value="01">1</option>
+
+                <option value="02">2</option>
+
+                <option value="03">3</option>
+
+                <option value="04">4</option>
+
+                <option value="05">5</option>
+
+                <option value="06">6</option>
+
+                <option value="07">7</option>
+
+                <option value="08">8</option>
+
+                <option value="09">9</option>
+
+                <option value="10">10</option>
+
+                <option value="11">11</option>
+
+                <option value="12">12</option>
+
+                <option value="13">13</option>
+
+                <option value="14">14</option>
+
+                <option value="15">15</option>
+
+                <option value="16">16</option>
+
+                <option value="17">17</option>
+
+                <option value="18">18</option>
+
+                <option value="19">19</option>
+
+                <option value="20">20</option>
+
+                <option value="21">21</option>
+
+                <option value="22">22</option>
+
+                <option value="23">23</option>
+
+                <option value="24">24</option>
+
+                <option value="25">25</option>
+
+                <option value="26">26</option>
+
+                <option value="27">27</option>
+
+                <option value="28">28</option>
+
+                <option value="29">29</option>
+
+                <option value="30">30</option>
+
+                <option value="31">31</option>
+
+              </select>
+
+              <select id="inyear" name="inyear">
+
+                <option value="2013">2013</option>
+
+                <option value="2014">2014</option>
+
+                <option value="2015">2015</option>
+
+              </select>
+
+            </fieldset>
+
+            <fieldset id="pad">
+
+              <h2>Check-out date</h2>
+
+              <select name="outmonth">
+
+                <option value="01">January</option>
+
+                <option value="02">February</option>
+
+                <option value="03">March</option>
+
+                <option value="04">April</option>
+
+                <option value="05">May</option>
+
+                <option value="06">June</option>
+
+                <option value="07">July</option>
+
+                <option value="08">August</option>
+
+                <option value="09">September</option>
+
+                <option value="10">October</option>
+
+                <option value="11">November</option>
+
+                <option value="12">December</option>
+
+              </select>
+
+              <select name="outdate">
+
+                <option value="01">1</option>
+
+                <option value="02">2</option>
+
+                <option value="03">3</option>
+
+                <option value="04">4</option>
+
+                <option value="05">5</option>
+
+                <option value="06">6</option>
+
+                <option value="07">7</option>
+
+                <option value="08">8</option>
+
+                <option value="09">9</option>
+
+                <option value="10">10</option>
+
+                <option value="11">11</option>
+
+                <option value="12">12</option>
+
+                <option value="13">13</option>
+
+                <option value="14">14</option>
+
+                <option value="15">15</option>
+
+                <option value="16">16</option>
+
+                <option value="17">17</option>
+
+                <option value="18">18</option>
+
+                <option value="19">19</option>
+
+                <option value="20">20</option>
+
+                <option value="21">21</option>
+
+                <option value="22">22</option>
+
+                <option value="23">23</option>
+
+                <option value="24">24</option>
+
+                <option value="25">25</option>
+
+                <option value="26">26</option>
+
+                <option value="27">27</option>
+
+                <option value="28">28</option>
+
+                <option value="29">29</option>
+
+                <option value="30">30</option>
+
+                <option value="31">31</option>
+
+              </select>
+
+              <select name="outyear">
+
+                <option value="2013">2013</option>
+
+                <option value="2014">2014</option>
+
+                <option value="2015">2015</option>
+
+              </select>
+
+            </fieldset>
+
+            <fieldset id="pad">
+
+              <h2>Room(s) to reserve</h2>
+
+              <label for="sun">
+
+                <input type="checkbox" id="sun" name="room" value="Sun Room" >
+
+                Sun Room
+
+              </label>
+
+              <label for="reed">
+
+                <input type="checkbox" id="reed" name="room" value="Reed Room" >
+
+                Reed Room
+
+              </label>
+
+              <label for="tree">
+
+                <input type="checkbox" id="tree" name="room" value="Treehouse" >
+
+                Treehouse
+
+              </label>
+
+              <label for="garden">
+
+                <input type="checkbox" id="garden" name="room" value="Garden Room" >
+
+                Garden Room
+
+              </label>
+
+            </fieldset>
+
+            <fieldset id="pad">
+
+              <h2>What's the occasion for your visit?</h2>
+
+              <label for="vacation">
+
+                <input type="radio" name="occasion" id="vacation" value="Vacation" checked="checked" >
+
+                Vacation
+
+              </label>
+
+              <label for="celebration">
+
+                <input type="radio" name="occasion" id="celebration" value="Celebration" >
+
+                Celebration
+
+              </label>
+
+              <label for="event">
+
+                <input type="radio" name="occasion" id="event" value="Special Event" >
+
+                Special event
+
+              </label>
+
+            </fieldset>
+
+          
+
+          <fieldset id="textwidth">
+
+            <h2>Additional information</h2>
+
+            <label for="feedback">
+
+              Feedback, special requests, or other information
+
+              <textarea id="textwidth" name="feedback" rows="4" cols="55"></textarea>
+
+            </label>
+
+          </fieldset>
+
+          <fieldset>
+
+            <input type="submit" id="but" value="Submit" >
+
+			<input type="reset" id="but" value="Do Again" >
+
+          </fieldset>
+
+        </form>
+
+
+
+
+
+  </body>
+
+</html>

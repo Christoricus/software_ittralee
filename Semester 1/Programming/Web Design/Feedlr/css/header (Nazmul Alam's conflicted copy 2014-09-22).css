@@ -1,0 +1,115 @@
+#header{
+	height: 230px;
+	position: relative;
+	z-index: 10;
+}
+
+/* SOCIAL --------------------------------------------------------*/
+
+#social-holder{
+	overflow: hidden;
+	width: 100%;
+	padding-top: 40px;	
+}
+
+.social{
+	display: block;
+	float: right;
+	overflow: hidden;
+	margin-right: 20px;
+}
+
+.social li{
+	display: block;
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.social a{
+	display: block;
+	width: 32px;
+	height: 32px;
+	text-indent: -9000px;
+}
+
+/* NAVIGATION --------------------------------------------------------*/
+
+
+#nav{
+	display: block;
+	position: absolute;
+	top: 135px;
+	left: 30px;
+	height: 46px;
+	width: 88%;
+	background: #ffd800;
+	border-radius: 23px;
+	-moz-border-radius: 23px;
+	-webkit-border-radius: 23px;
+}
+
+#nav>li{
+	display: block;
+	float: left;
+	margin-left: 5px;
+	margin-top: 12px;
+}
+
+#nav>li:first-child{
+	margin-left: 10px;
+}
+
+#nav>li>a{
+	display: block;
+	font-size: 12px;
+	color: #363636;
+	text-decoration: none;
+	padding: 7px 10px 6px 10px;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	
+	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+
+#nav>li>a:hover,
+#nav>li.current-menu-item>a{
+	color: #fff;
+	background: #363636;
+	text-shadow: none;
+}
+
+/* SEARCH --------------------------------------------------------*/
+
+.top-search{
+	position: absolute;
+	top: 160px;
+	right: 50px;
+}
+
+#searchform #s{
+	color: #49494b;
+	font-size: 12px;
+	width: 160px;
+	height: 21px;
+	margin: 0px 0px 5px 0px;
+	padding: 2px 35px 2px 8px;
+	border: 0;
+	background: #f0efeb;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#searchform #searchsubmit{
+	position: absolute; 
+	top: 0px;
+	right: 0px;
+	width: 25px;
+	height: 25px;
+	border: 0px;
+	background: url(../images/search-submit.png) no-repeat  transparent -3px 2px;
+}

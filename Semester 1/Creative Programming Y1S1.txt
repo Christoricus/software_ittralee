@@ -1,0 +1,14 @@
+17/9/2013
+
+PhoneGap.com 			Create mobile apps using html, css and javascript.
+MAKE Magazine			Get creative ideas.
+Jfiddle.net			Play with javascript
+GitHub				Get ideas from other people's work and codes.
+Arduino/Raspberry Pi		Small computer to use as a device to become creative in programming.
+ 
+
+NB. Script goes with JavaScript > CoffeeScript
+
+
+ToDo. 
+1. Install Processing software.

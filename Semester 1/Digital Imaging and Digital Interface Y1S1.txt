@@ -1,0 +1,14 @@
+17/9/2013
+
+www.sitepoint.com
+
+GET: SketchBook - notepad for sketching design ideas.
+
+Notes:
+
+For images for the web is 72 pixels 
+
+RGB is for web
+CMYK is for printers
+
+Do not use CMYK for editing. Use RGB at the start and then convert to CMYK at the end.

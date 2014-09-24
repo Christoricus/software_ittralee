@@ -1,0 +1,43 @@
+﻿/* Murfreesboro Regional Soccer League */
+body {
+  text-align: left;
+  font-family: tahoma, arial, helvetica, sans-serif;
+  }
+h1, #narsa {
+  text-align: center;
+  padding: 0.1em;
+  margin: 0;
+  font-family: georgia, "times new roman", times, serif;
+  }
+h1 {
+  font-size: 2em;
+  }
+#narsa {
+  font-size: 1.25em;
+  }
+#head {
+  border: 0.35em solid black;
+  background: rgb(140,198,63);
+  padding: 0;
+  margin: 0;
+  }
+#box {
+  width: 42em;
+  margin-left: auto;
+  margin-right: auto;
+  }
+#maintext {
+  padding: 0.5em;
+  border-left: 0.35em solid black;
+  border-right: 0.35em solid black;
+  }
+#contact {
+  text-align: right;
+  padding: 0.5em;
+  color: white;
+  background: black;
+  margin: 0;
+  }
+#name {
+  font-weight: bold;
+  }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Thumbnails - Exercise 1</title>
+	
+	<meta charset="utf-8">
+	
+	<style rel="stylesheet">
+	
+	body {
+		font-size: 62.5%;
+		font-family: Helvetica, Verdana, Arial;
+	}
+	
+	body ::selection {
+		background-color: red;
+	}
+	body ::-moz-selection {
+		background-color: red;
+	}
+	
+	#links{
+	   margin-top:100px ;
+	   margin-left:auto;
+	   margin-right:auto;
+	   width:60%;
+	   font-size: 1.6em;
+    }
+   
+   .thumbnail {
+	   float: left;
+	   width: 139px;
+	   height: 145px;
+	   border: 1px solid #000;
+	   margin: 0 40px 15px 0;
+	   padding: 5px;
+	   text-align: center;
+	   background-repeat: no-repeat;
+	   background-position: 50% 50%;
+	   margin-bottom:30px;
+	   background-image: url(Thumbnails/header_left.gif)
+    }
+	
+	#links a img {
+		height: 0;
+		width: 0;
+		border-width: 0;
+	}
+	
+	#links a {
+		display: block;
+		padding-top: 110px;
+	}
+	
+	#links a:hover img {
+	   position: relative;
+	   top: -200px;
+	   left: -40px;
+	   height: 240px;
+	   width: 220px;
+	   border-width: 2px;
+	   border-color:#ccc;
+	   padding:20px;
+	   background-color:#000;
+   
+	}
+	
+	</style>
+	
+	
+	</head>
+	
+	<body>
+	
+	<div id="links">   
+	   <div class="thumbnail">    
+		 <a href="Thumbnails/header_left.gif" target="_blank">
+		 Image Name<img src="Thumbnails/photo01.jpg" alt="" /></a>  
+	   </div>
+	   
+	   <div class="thumbnail">    
+		 <a href="Thumbnails/header_left.gif" target="_blank">
+		 Image Name<img src="Thumbnails/photo01.jpg" alt="" /></a>  
+	   </div>
+	   
+	   <div class="thumbnail">    
+		 <a href="Thumbnails/header_left.gif" target="_blank">
+		 Image Name<img src="Thumbnails/photo01.jpg" alt="" /></a>  
+	   </div>
+	   
+	</div> 
+
+	
+	</body>
+</html>
+

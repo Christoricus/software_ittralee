@@ -1,0 +1,5 @@
+java.net - gives classes for writing computer networking applications
+
+java.sql - gives classes for accessing and processing the data stored in a data source (usually a relational database).
+
+java.io - gives classes to allow for input and output to occur through data streams, serialisation and the file system.

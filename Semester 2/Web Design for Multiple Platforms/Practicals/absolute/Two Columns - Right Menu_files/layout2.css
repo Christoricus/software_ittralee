@@ -1,0 +1,30 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #333; PADDING-TOP: 0px; FONT-FAMILY: verdana, arial, helvetica, sans-serif; BACKGROUND-COLOR: white
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 28px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 15px; COLOR: #ccc; PADDING-TOP: 0px
+}
+P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 16px; FONT: 11px/20px verdana, arial, helvetica, sans-serif; PADDING-TOP: 0px
+}
+A {
+	FONT-WEIGHT: 600; FONT-SIZE: 11px; COLOR: #09c; FONT-FAMILY: verdana, arial, helvetica, sans-serif; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #09c
+}
+A:visited {
+	COLOR: #07a
+}
+A:hover {
+	BACKGROUND-COLOR: #eee
+}
+#Header {
+	BORDER-RIGHT: black 0px solid; PADDING-RIGHT: 3px; BACKGROUND-POSITION: right 50%; BORDER-TOP: black 1px solid; MARGIN-TOP: 60px; PADDING-LEFT: 3px; FONT-WEIGHT: bolder; FONT-SIZE: 14px; BACKGROUND-IMAGE: url(header_left.gif); PADDING-BOTTOM: 3px; MARGIN-LEFT: 5px; BORDER-LEFT: black 0px solid; WIDTH: 100%; COLOR: black; PADDING-TOP: 3px; BORDER-BOTTOM: black 1px solid; BACKGROUND-REPEAT: no-repeat; HEIGHT: 28px
+}
+#Content {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN: 0px 210px 50px 10px; PADDING-TOP: 10px
+}
+#Menu {
+	BORDER-RIGHT: #999 1px dashed; PADDING-RIGHT: 10px; BORDER-TOP: #999 1px dashed; PADDING-LEFT: 10px; RIGHT: 20px; PADDING-BOTTOM: 10px; BORDER-LEFT: #999 1px dashed; WIDTH: 150px; LINE-HEIGHT: 17px; PADDING-TOP: 10px; BORDER-BOTTOM: #999 1px dashed; POSITION: absolute; TOP: 150px; BACKGROUND-COLOR: #eee
+}

@@ -1,0 +1,14 @@
+#search input {
+ width: 100px;
+ -moz-transition: width 0.5s ease-out;
+ -webkit-transition: width 0.5s ease-out;
+ transition: width 0.5s ease-out;
+}
+#search input:focus {
+ width: 200px;
+ -moz-transition: width 0.5s ease-out;
+ -webkit-transition: width 0.5s ease-out;
+ transition: width 0.5s ease-out;
+}
+
+http://www.paulund.co.uk/create-a-slide-out-search-box

@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CV Wedding Hall</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="wedding_hall.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript">
+/* <![CDATA[ */
+var guestsCost = 0;
+var limousinesCost = 0;
+var liveMusicCost = 0;
+var flowersCost = 0;
+var totalEstimate = 0;
+var liveMusic = false;
+var flowers = false;
+function calcGuests() {
+    totalEstimate -= guestsCost;
+    guestsCost = document.details.numGuests.value * 65;
+    totalEstimate += guestsCost;
+    document.estimate.cost.value = "€" + totalEstimate;
+}
+function calcLimousines() {
+    totalEstimate -= limousinesCost;
+    limousinesCost = document.details.numLimousines.value * 125;
+    totalEstimate += limousinesCost;
+    document.estimate.cost.value = "€" + totalEstimate;
+}
+function addMusic() {
+    (liveMusic == false)
+    ? liveMusicCost = 500 : liveMusicCost = 0;
+    totalEstimate += liveMusicCost;
+    liveMusic = true;
+    document.estimate.cost.value = "€" + totalEstimate;
+}
+function removeMusic() {
+    (liveMusic == true)
+    ? liveMusicCost = -500 : liveMusicCost = 0;
+    totalEstimate += liveMusicCost;
+    liveMusic = false;
+    document.estimate.cost.value = "€" + totalEstimate;
+}
+function addFlowers() {
+    (flowers == false)
+    ? flowersCost = 400 : flowersCost = 0;
+    totalEstimate += flowersCost;
+    flowers = true;
+    document.estimate.cost.value = "€" + totalEstimate;
+}
+function removeFlowers() {
+    (flowers == true)
+    ? flowersCost = -400 : flowersCost = 0;
+    totalEstimate += flowersCost;
+    flowers = false;
+    document.estimate.cost.value = "€" + totalEstimate;
+}
+
+/* ]]> */
+</script>
+</head>
+<body>
+    <table border="0" width="780" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>
+                            <img src="images/head1.jpg" width="246" height="395" alt="Visual formatting element" />
+                        </td>
+                        <td>
+                            <img src="images/head2.jpg" width="193" height="395" alt="Visual formatting element" />
+                        </td>
+                        <td>
+                            <div>
+                                <img src="images/head3.jpg" width="226" height="193" alt="Visual formatting element" /></div>
+                            <div>
+                                <img src="images/head5.jpg" width="226" height="200" alt="Visual formatting element" /></div>
+                        </td>
+                        <td>
+                            <img src="images/head4.jpg" width="115" height="397" alt="Visual formatting element" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="c7">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tr valign="top">
+                        <td class="c4">
+                            <div class="c3">
+                                <h1>
+                                    <img src="images/planner.gif" width="191" height="21" alt="Visual formatting element" /></h1>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="images/pic1.jpg" width="130" height="130" class="c1" alt="Visual formatting element" />
+                                        </td>
+                                        <td>
+
+<form action="" name="details">
+<table>
+    <tr>
+        <td>
+            <tr>
+                <td>Guests<br />
+                    ($65 each)</td>
+                <td>
+                    <input type="text"
+                        name="numGuests" size="3"
+                        onchange="calcGuests()" /></td>
+            </tr>
+            <tr>
+                <td>Limousines<br />
+                    ($125 each)</td>
+                <td>
+                    <input type="text"
+                        name="numLimousines" size="3"
+                        onchange="calcLimousines()" /></td>
+            </tr>
+<tr>
+    <td>Live music<br />
+        ($500)</td>
+    <td>
+        <input type="radio" name="music"
+            onclick="addMusic()" />Yes
+        <input type="radio" name="music"
+            checked="checked" onclick="removeMusic()" />No
+    </td>
+</tr>
+<tr>
+    <td>Flowers<br />
+        ($400)</td>
+    <td>
+        <input type="radio" name="flowers"
+            onclick="addFlowers()" />Yes
+        <input type="radio" name="flowers"
+            checked="checked" onclick="removeFlowers()" />No </td>
+</tr>
+</table>
+</form>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td>
+                                            <img src="images/hr_l.gif" width="158" height="1" border="0"></td>
+                                        <td>
+                                            <img src="images/hr_r.gif" width="198" height="1" border="0"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <br />
+                            <img src="images/slash.gif" width="374" height="29" alt="Visual formatting element" />
+                            <div class="c3">
+                                <h1>
+                                    <img src="images/estimate.gif" width="105" height="21" alt="Visual formatting element" /></h1>
+                                <img src="images/pic3.jpg" width="95" height="95" align="left" class="c1" alt="Visual formatting element" />
+
+<form action="" name="estimate">
+<p>
+    Estimated total cost:
+    <input type="text" name="cost" size="5"
+        style="border-style: none; border-color: inherit;
+        border-width: medium; background-color: Transparent" text="0" /></p>
+</form>
+
+                            </div>
+                        </td>
+                        <td class="c6" style="width: 225px">
+                            <h1>
+                                <img src="images/h_gallery.gif" width="113" height="21" alt="Visual formatting element" /></h1>
+                            <div>
+                                <img src="images/pic4.jpg" width="185" height="130" alt="Visual formatting element" /></div>
+                            <div>
+                                <img src="images/pic5.jpg" width="185" height="126" alt="Visual formatting element" /></div>
+                            <div>
+                                <img src="images/pic6.jpg" width="185" height="122" alt="Visual formatting element" /></div>
+                        </td>
+                        <td>
+                            <div>
+                                <a href="index.html">
+                                    <img src="images/m2.gif" width="159" height="30" alt="Visual formatting element" /></a></div>
+                            <div>
+                                <a href="guestbook.html">
+                                    <img src="images/m5.gif" width="159" height="30" alt="Visual formatting element" /></a></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="c8" id="foot">
+                <p>
+                    2010 &copy; CV Wedding Hall. All rights reserved.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

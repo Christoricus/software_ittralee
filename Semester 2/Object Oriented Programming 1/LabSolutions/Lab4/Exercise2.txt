@@ -1,0 +1,5 @@
+(i) it takes 2 arguments
+(ii) it expects 2 float arguments
+(iii) The method is to determine and return the smaller of the 2 values it receives
+(iv) it returns a float value
+(v) System.out.println("The smaller of 56 and -45 is " + Math.min(56,-45));

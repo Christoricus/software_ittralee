@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--  Absolute exercise week 2. This week we covered overflow and clear (float) -->
+
+<html lang="en">
+<head>
+	<title>Absolute Positioning Exercise 4 | Week 2 </title>
+	<meta charset="utf-8">
+	
+	<style type="text/css">
+		#nav {
+			width: 200px;
+			height: auto;
+			float: left;
+			padding-left: 5px;
+		}
+		
+		#content {
+			position: absolute;
+			top: 0px;
+			left: 200px;
+			width: 100%;
+			margin-top: 0px;
+			
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+
+<div id="nav">
+	<h3>This is my Menu</h3>
+	
+	<ul>
+		<li>This is a menu item</li>
+		<li>This is a menu item</li>
+		<li>This is a menu item</li>
+		<li>This is a menu item</li>
+	</ul>
+</div>
+
+<div id="content">
+
+	<h1>This is the content for my page.</h1>
+	<p>This page represents an example of how to use CSS for positioning. There are four basic ways that you can position elements in CSS. 
+	By default, elements remain in the flow (also called static positioning), which means that they simply appear on the page as they 
+	appear in the .html. Second, you can position elements absolutely, which means that they are taken out of the flow and 
+	positioned with respect to their parent element. Third, you can use a fixed position, which means the box is taken out 
+	of the flow and positioned relative to the browser window. Fourth, is relative positioning, which means the elments are positioned
+	with respect to where they would have appeared in the default flow.</p>
+	
+	<h2>This is more content for my page.</h2>
+	<p>So that I can illustrate what happens when you scroll up and down the page and also to illustrate what happens when you resize the 
+	browser window I am adding more content. If you use a fixed positioning, scrolling up and down has an interesting effect in that 
+	elements that are fixed will remain in the window, while others will scroll up and down. If you resize the window it will have 
+	an impact on elements that have been sized or positioned with percentage since they will grow and shrink with respect to the 
+	browser window ("liquid layout"), while elements that are sized or positioned absolutely, will not shrink.</p>
+
+
+</div>
+
+</body>
+
+</html>

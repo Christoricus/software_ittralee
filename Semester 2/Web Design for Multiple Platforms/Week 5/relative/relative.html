@@ -1,0 +1,65 @@
+<p>As I've explained above, by default an element has <b>static</b> positioning. It appears exactly where it was typed on the page. For example, the following DIV element is statically positioned so it appears right after this paragraph:</p>
+
+
+
+<div style="width: 100px; height:110px; background-color: aqua;">
+
+I'm static.</div>
+
+
+
+<p>Actually, this is the same as saying that it has a <b>relative position of 0 and 0.</b> Note how the following DIV with these style rules behaves:</p>
+
+
+
+<p class="code">
+
+position:relative;<br />
+
+left: 0px; top:0px;<br />
+
+width:100px;<br />
+
+height:100px;<br />
+
+background-color:aqua;<br />
+
+</p>
+
+
+
+<div style="position:relative; left: 0; top:0; width:100px; height:110px; background-color: aqua;">
+
+I'm a relatively positioned DIV with coordinates of 0px left, 0px top.
+
+</div>
+
+
+
+<p>So what? you might be thinking. For the next box, we will specify different values for left and top, and you'll see what happens:</p>
+
+
+
+<p class="code">
+
+position:relative;<br />
+
+left: 50px; top:30px;<br />
+
+width:100px;<br />
+
+height:100px;<br />
+
+background-color:aqua;<br /></p>
+
+
+
+<div style="position:relative; left: 50px; top:30px; width:100px; height:110px; background-color: aqua; ">
+
+I'm a relatively positioned DIV with coordinates of 50px left, 30px top.
+
+</div>
+
+
+
+<p style="position:relative;top:10px;left:10px;">Do you see how the box has shifted over to the left and slightly down, compared to the boxes above, in relation to the main text box? (Depending on your browser default font size, it may even be overlapping this paragraph a bit.) It is shifted 50px to the left and 30px down from the starting (static) position.</p>

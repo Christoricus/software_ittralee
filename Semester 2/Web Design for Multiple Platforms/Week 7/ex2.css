@@ -1,0 +1,94 @@
+body {
+	font-family: Helvetica, Verdana, serif, sans-serif;
+	font-size: 62.5%;
+	margin: 45px 0;
+}
+
+body ::selection {
+	background: red;
+}
+body ::-moz-selection {
+	background: red;
+}
+
+header {
+	font-weight: bold;
+	font-size: 25em;
+	text-align: center;
+}
+
+footer {
+	color: #ccc;
+	font-size: 1.4em;
+	text-align: center;
+	padding: 5px 45px 5px 5px;
+	min-width: 500px;
+	max-width: 720px;
+	margin: auto;
+	border-right: 2px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+
+#wrapper {
+	width: 100%;
+
+}
+
+#car {
+	background-image: url('car.jpg');
+	background-repeat: repeat-x;
+	margin-bottom: 0%;
+
+}
+
+#slogan {
+	width: 100%;
+	margin: auto;
+	padding: 10px 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #000;
+	font-color: #fff;
+	text-align: center;
+}
+
+#first {
+	font-size: 5em;
+	color: white;
+}
+
+#second {
+	font-size: 2.5em;
+	color: white;
+}
+
+    span[data-descr] {
+        position: relative;
+        
+        cursor: help;
+    }
+
+    span[data-descr]:hover::after {
+        content: attr(data-descr);
+        position: absolute;
+        left: 250px;
+        top: 150px;
+        min-width: 200px;
+        border: 1px #aaaaaa solid;
+        border-radius: 10px;
+        background-color: #ffffcc;
+        padding: 12px;
+        color: #000000;
+        font-size: 14px;
+        z-index: 1;
+    }
+
+a:link { 
+	text-decoration: none;
+	color: #09c;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #ff0000;
+}

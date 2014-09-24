@@ -1,0 +1,27 @@
+#logo{
+	position: absolute;
+	top: 20px;
+	left: 25px;
+}
+
+#slogan{
+	position: absolute;
+	top: 105px;
+	left: 45px;
+}
+
+#device {
+	display: block;
+	overflow: scroll;
+	background: url(../images/device.jpg) no-repeat;
+	width: 80%;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 410px;
+	
+}
+
+#download {
+	width: 50%;
+	margin: auto;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+  <title>green layout</title>
+    <meta charset='utf-8'> 
+<script src = "distancecalc.js"></script>
+<script>
+
+function success(position) {
+    document.getElementById ('visitus').style.display = 'block';
+	
+	document.getElementById ('coordlat').innerHTML =  position.coords.latitude;
+	document.getElementById ('coordlong').innerHTML = position.coords.longitude;
+	
+	document.getElementById ('distance2').innerHTML = getDistanceFromLatLonInKm(51.897871900000000000, -8.471087399999988000, 
+	position.coords.latitude, position.coords.longitude);
+	
+	}
+	 
+
+</script>
+</head>
+<body>
+
+<button onclick="navigator.geolocation.getCurrentPosition(success);">distance</button>
+
+<p id="visitus">
+<p>You're <span id="distance2">0</span> mi from Cork. Come visit!</p>
+ <p>Your current lat is: <span id="coordlat">0</span>
+Your current long is: <span id="coordlong">0</span></p>
+</p>
+</body>
+</html>
+
+
+

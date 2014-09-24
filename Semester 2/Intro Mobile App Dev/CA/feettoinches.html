@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title></title>
+    <meta charset='utf-8'>
+	<script type="text/javascript">
+        /* <![CDATA[ */
+	function cfeettoin()
+	{
+	
+	                  
+	 var result=0; 
+     result=document.convert.num.value * 12; 
+	  
+	 alert("Feet to Inches is: " + result.toFixed(2));
+	}
+	function cintofeet()
+	{
+	
+	 var result=0; 
+	  result=document.convert.num.value / 12; 
+	 result = "Inches to feet is: " + result.toFixed(2);
+	 alert(result);
+	
+	}
+	     /* ]]> */
+    </script> 
+</head>
+<body>
+    <form name="convert" action="" method="get">
+    <table width="50%" align="center">
+        <tr>
+            <td valign="top">
+               <label> Number to convert <input type="text" name="num" value="0">
+				</td>
+				<td> 
+				<input type="radio" name="convert" onclick="cfeettoin();">
+                feet to inches <br />
+                <input type="radio" name="convert" onclick="cintofeet();">
+                inches to feet <br /></td>
+           
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+div.col {
+	width:47.5%;
+	
+}
+
+div.col-sec {
+	margin:0; 
+	padding-bottom: 25px;
+	background-color: #ccc;
+}
+
+div.col-last {
+	clear: both;
+	float: none;
+	width: auto;   
+    margin-top:15px;
+  	background-color: #cdc;
+	
+	}
+	
+div.nav ul li {
+	width: 25%;
+	border-bottom: 1px solid #bababa;
+  
+  }
+ 
+@media screen and (max-width: 620px) {
+			div.nav ul li {
+			width: 33%;
+		}
+
+
+
+
+@media screen and (max-width: 500px) {
+		div.mobile-collapse {
+		width: auto;
+		float: none;
+		margin-right: 0;
+		margin-bottom: 25px;
+		background-color: #ccc;
+
+	
+	}
+	
+	.hide-mobile {
+	  display: none; 
+	  
+	  }
+	
+	
+	div.nav ul li {
+		width: 50%;
+		font-size: 85%;
+	}
+	
+.first-letter {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 35px;
+}
+
+
+

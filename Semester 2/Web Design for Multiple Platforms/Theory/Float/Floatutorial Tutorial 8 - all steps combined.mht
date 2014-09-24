@@ -1,0 +1,644 @@
+﻿From: <Saved by Windows Internet Explorer 7>
+Subject: Floatutorial: Tutorial 8 - all steps combined
+Date: Mon, 16 Mar 2009 13:56:15 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0007_01C9A63E.F928BEB0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5579
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0007_01C9A63E.F928BEB0
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.maxdesign.com.au/floatutorial/tutorial0816.htm
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" =
+"http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML lang=3Den><HEAD><TITLE>Floatutorial: Tutorial 8 - all steps =
+combined</TITLE>
+<META http-equiv=3Dcontent-type content=3D"text/html; =
+charset=3Diso-8859-1">
+<STYLE type=3Dtext/css media=3Dscreen>@import url( =
+/stylesheets/floatutorial.css );
+</STYLE>
+<LINK href=3D"/floatutorial/floatutorial.ico" rel=3D"SHORTCUT =
+ICON"><LINK=20
+media=3Dprint href=3D"http://css.maxdesign.com.au/stylesheets/print.css" =
+
+rel=3Dstylesheet>
+<STYLE type=3Dtext/css media=3Dscreen>#container {
+	BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; MARGIN: 10px =
+auto; BORDER-LEFT: gray 1px solid; WIDTH: 90%; COLOR: #333; LINE-HEIGHT: =
+130%; BORDER-BOTTOM: gray 1px solid; BACKGROUND-COLOR: #fff
+}
+#top {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; =
+PADDING-TOP: 0.5em; BORDER-BOTTOM: gray 1px solid; BACKGROUND-COLOR: =
+#ddd
+}
+#top H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: =
+0px; PADDING-TOP: 0px
+}
+#leftnav {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; FLOAT: left; PADDING-BOTTOM: =
+1em; MARGIN: 0px; WIDTH: 160px; PADDING-TOP: 1em
+}
+#content {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; MAX-WIDTH: 36em; PADDING-BOTTOM: =
+1em; MARGIN-LEFT: 200px; BORDER-LEFT: gray 1px solid; PADDING-TOP: 1em
+}
+#footer {
+	CLEAR: both; PADDING-RIGHT: 0.5em; BORDER-TOP: gray 1px solid; =
+PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; MARGIN: 0px; COLOR: #333; =
+PADDING-TOP: 0.5em; BACKGROUND-COLOR: #ddd
+}
+#leftnav P {
+	MARGIN: 0px 0px 1em
+}
+#content H2 {
+	MARGIN: 0px 0px 0.5em
+}
+</STYLE>
+
+<META content=3D"MSHTML 6.00.6000.16705" name=3DGENERATOR></HEAD>
+<BODY>
+<DIV id=3Dheader>
+<H1>Floatutorial - Step by step CSS float tutorial </H1></DIV>
+<UL id=3Dnav>
+  <LI><A href=3D"http://css.maxdesign.com.au/index.htm">Home</A>=20
+  <LI><A =
+href=3D"http://css.maxdesign.com.au/listamatic/index.htm">Listamatic</A> =
+
+  <LI><A=20
+  =
+href=3D"http://css.maxdesign.com.au/listamatic2/index.htm">Listamatic2</A=
+>=20
+  <LI><A=20
+  =
+href=3D"http://css.maxdesign.com.au/listutorial/index.htm">Listutorial</A=
+>=20
+  <LI><A=20
+  =
+href=3D"http://css.maxdesign.com.au/floatutorial/index.htm"><STRONG>Float=
+utorial</STRONG></A>=20
+
+  <LI><A=20
+  =
+href=3D"http://css.maxdesign.com.au/selectutorial/index.htm">Selectutoria=
+l</A>=20
+  </LI></UL>
+<UL id=3Dnav2>
+  <LI><A =
+href=3D"http://css.maxdesign.com.au/floatutorial/tutorial0815.htm">=AB=20
+  Previous Step</A>=20
+  <LI><A =
+href=3D"http://css.maxdesign.com.au/floatutorial/index.htm">Main =
+menu</A>=20
+  </LI></UL>
+<DIV id=3Dcontentblock>
+<H2>Tutorial 8 - Liquid two column layout - all steps combined </H2>
+<H3>Step 1 - Start with the semantically marked up code </H3>
+<P>To lay out a page into two columns, you need to start with the basic =
+page=20
+structure. In this case we will use some dummy content to create a two =
+column=20
+template. The page has been grouped into five separate divs, and each of =
+these=20
+div's has been been given a unique ID selector. The divs are labeled;=20
+"container" (wrapped around the entire page's content), "top" (for the =
+top=20
+banner), "leftnav" (for the smaller, left column), "content" (for the =
+main=20
+content) and "footer" (for the footer across the bottom of the page). =
+</P>
+<H3>Step 2 - Add width and margin to the container </H3>
+<P>To get the content to sit in from the edge of the browser window (or=20
+viewport) we need to set width and margins on the main div that wraps =
+around the=20
+content. </P>
+<P>In this case we will use a width of 90% so the CSS declaration used =
+is:=20
+"width: 90%". Any width could be used, including 100%, which would force =
+the=20
+content to the left and right edges of the viewport. </P>
+<P>To center the div in the viewport, we apply "auto" margins to left =
+and right.=20
+To move the div away from the top and bottom of the viewport we use a =
+margin of=20
+10px. These can be combined into one shorthand CSS declaration: "margin: =
+10px=20
+auto". This will apply a margin of 10px to the top and bottom and auto =
+margins=20
+to the left and right. </P>
+<P>Some browsers (particularly Win/IE5 and Win/IE5.5) do not support the =
+auto=20
+left and right margins. However, with the <A=20
+href=3D"http://www.maxdesign.com.au/presentation/center/">addition of =
+two simple=20
+rules</A>, these browsers will center the containing block correctly. =
+</P>
+<DIV class=3Dcontainingbox><CODE><SPAN =
+class=3Dnew>#container<BR>{<BR>width:=20
+90%;<BR>margin: 10px auto;<BR>}</SPAN></CODE> </DIV>
+<H3>Step 3 - Add color, background color and border </H3>
+<P>To add color and background color to the main div, use =
+"background-color:=20
+#fff;" and "color: #333;". </P>
+<P>To apply a border to the div, use "border: 1px solid gray;". </P>
+<DIV class=3Dcontainingbox><CODE>#container<BR>{<BR>width: =
+90%;<BR>margin: 10px=20
+auto;<BR><SPAN class=3Dnew>background-color: #fff;<BR>color: =
+#333;<BR>border: 1px=20
+solid gray;<BR>}</SPAN></CODE> </DIV>
+<H3>Step 4 - Add line height </H3>
+<P>To increase readability, you can increase the overall line-height of =
+text. If=20
+it is applied to this main div, it will cascade down throughout all divs =
+below.=20
+The rule can be written as "line-height: 130%;". </P>
+<DIV class=3Dcontainingbox><CODE><SPAN class=3Dnew>line-height: =
+130%;</SPAN></CODE>=20
+</DIV>
+<H3>Step 5 - Styling the top banner </H3>
+<P>To style the top div, we will set a background color, padding and a =
+border=20
+across the bottom. The three declarations will be: "padding: .5em;" to =
+add=20
+padding to the div, "background-color: #ddd;" to add a background color =
+and=20
+"border-bottom: 1px solid gray" to apply a border to the bottom of the =
+div. </P>
+<DIV class=3Dcontainingbox><CODE><SPAN class=3Dnew>#top<BR>{<BR>padding: =
+
+.5em;<BR>background-color: #ddd;<BR>border-bottom: 1px solid=20
+gray;<BR>}</SPAN></CODE> </DIV>
+<H3>Step 6 - Remove margins and padding from the h1 </H3>
+<P>Inside the top banner there is an H1 tag. We want the words to sit =
+.5em in=20
+from the top and left edge of the div. Browsers add different amounts of =
+padding=20
+above an H1, it is easiest to remove all padding and margin from this H1 =
+and let=20
+the div provide the padding. This is achieved by using a descendant =
+selector -=20
+"#top h1 { padding: 0; margin: 0;}". </P>
+<DIV class=3Dcontainingbox><CODE><SPAN class=3Dnew>#top =
+h1<BR>{<BR>padding:=20
+0;<BR>margin: 0;<BR>}</SPAN></CODE> </DIV>
+<H3>Step 7 - Apply "float" to the leftnav </H3>
+<P>To float the left nav, we need to use the rule: "#leftnav {float: =
+left;}".=20
+When a div is set to float, a width must also be included, so we can add =
+another=20
+declaration: "width: 160px;". </P>
+<DIV class=3Dcontainingbox><CODE><SPAN =
+class=3Dnew>#leftnav<BR>{<BR>float:=20
+left;<BR>width: 160px;<BR>}</SPAN></CODE> </DIV>
+<H3>Step 8 - Add margin and padding to the leftnav </H3>
+<P>Next, we set the margin to "0", add 1em of padding (which will move =
+the text=20
+away from the edges of the div). </P>
+<DIV class=3Dcontainingbox><CODE><SPAN class=3Dnew>margin: =
+0;<BR>padding:=20
+1em;</SPAN></CODE> </DIV>
+<H3>Step 9 - Setting margins to the "content" div </H3>
+<P>This next step is the most important of the entire process. The =
+"leftnav" div=20
+has been floated, so text from the "content" div will flow down its left =
+edge=20
+and then wrap around under it. To make the text appear as it is in a new =
+column,=20
+we apply margin-left to the "content" div, making sure that the width is =
+greater=20
+than the overall width of the "leftnav" div. In this case, we will use=20
+"margin-left: 200px", which will give us 40px margin between the leftnav =
+and the=20
+main content. </P>
+<P>We will also apply a border to the left of the "content" div. This =
+could be a=20
+problem if the "leftnav" div is longer than the main content. If this is =
+the=20
+case, the border can be applied to the right side of the "leftnav" div =
+instead=20
+of the "content" div. </P>
+<DIV class=3Dcontainingbox><CODE><SPAN =
+class=3Dnew>#content<BR>{<BR>margin-left:=20
+200px;<BR>border-left: 1px solid gray;<BR>}</SPAN></CODE> </DIV>
+<H3>Step 10 - Add padding to the "content" div </H3>
+<P>To add padding to the content div use "padding: 1em;". </P>
+<DIV class=3Dcontainingbox><CODE><SPAN class=3Dnew>padding: =
+1em;</SPAN></CODE>=20
+</DIV>
+<H3>Step 11 - Styling the footer </H3>
+<P>To style the footer, we first need to set it to "clear: both". This =
+is=20
+critical, as it will force the footer below any floated elements above. =
+We then=20
+add "padding:.5em" and "margin: 0" . </P>
+<DIV class=3Dcontainingbox><CODE><SPAN =
+class=3Dnew>#footer<BR>{<BR>clear:=20
+both;<BR>margin: 0;<BR>padding: .5em;<BR>}</SPAN></CODE> </DIV>
+<H3>Step 12 - Add color and background color to the footer </H3>
+<P>To add color and background color to the footer use the following=20
+declarations: "color: #333;" and "background-color: #ddd;". </P>
+<DIV class=3Dcontainingbox><CODE><SPAN class=3Dnew>color: =
+#333;<BR>background-color:=20
+#ddd;</SPAN></CODE> </DIV>
+<H3>Step 13 - Add a border to the footer </H3>
+<P>To add a border to the top of the footer use "border-top: 1px solid =
+gray;".=20
+</P>
+<DIV class=3Dcontainingbox><CODE><SPAN class=3Dnew>border-top: 1px solid =
+
+gray;</SPAN></CODE> </DIV>
+<H3>Step 14 - Removing top margins </H3>
+<P>To remove the space above content in the "leftnav" and "content" =
+divs, use=20
+the following rules: "#leftnav p { margin: 0 0 1em 0; }" and "#content =
+h2 {=20
+margin: 0 0 .5em 0; }". </P>
+<P>Browsers use different amounts of margin above paragraphs and =
+headings. It is=20
+safe to remove all top margins, as long as there are bottom margins to =
+keep the=20
+paragraphs and headings separate from elements below them. </P>
+<DIV class=3Dcontainingbox><CODE><SPAN class=3Dnew>#leftnav p { margin: =
+0 0 1em 0;=20
+}<BR>#content h2 { margin: 0 0 .5em 0; }<BR></SPAN></CODE></DIV>
+<H3>Step 15 - Setting a maximum line length </H3>
+<P>If you want to set a maximum width on your main content, you can do =
+this by=20
+adding a new rule : "#content { max-width: 36em; }". </P>
+<P>Although IE browsers will ignore this rule, other standards compliant =
+
+browsers will not allow the content area to go wider that 36em - keeping =
+the=20
+line length to a comfortable width. </P>
+<DIV class=3Dcontainingbox><CODE><SPAN class=3Dnew>#content { max-width: =
+36em;=20
+}<BR></SPAN></CODE></DIV>
+<H2>Finished! </H2>
+<P><A href=3D"http://css.maxdesign.com.au/floatutorial/index.htm">=AB =
+Back to main=20
+menu</A> </P></DIV>
+<DIV id=3Dcontainer>
+<DIV id=3Dtop>
+<H1>Header</H1></DIV>
+<DIV id=3Dleftnav>
+<P>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam =
+nonummy=20
+nibh euismod tincidunt ut. </P></DIV>
+<DIV id=3Dcontent>
+<H2>Subheading</H2>
+<P>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam =
+nonummy=20
+nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut =
+wisi=20
+enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit =
+lobortis=20
+nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor =
+in=20
+hendrerit in vulputate velit esse molestie consequat, vel illum dolore =
+eu=20
+feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim =
+qui=20
+blandit praesent luptatum zzril delenit augue duis dolore te feugait =
+nulla=20
+facilisi. </P>
+<P>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper =
+suscipit=20
+lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum =
+iriure=20
+dolor in hendrerit in vulputate velit esse molestie consequat, vel illum =
+dolore=20
+eu feugiat nulla facilisis at vero eros et accumsan et iusto odio =
+dignissim qui=20
+blandit praesent luptatum zzril delenit augue duis dolore te feugait =
+nulla=20
+facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed =
+diam=20
+nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat =
+volutpat.=20
+</P></DIV>
+<DIV id=3Dfooter>Footer </DIV></DIV>
+<DIV id=3Dcontentblock2>
+<DIV class=3Dcontainingbox><CODE><STRONG>CSS=20
+CODE</STRONG><BR>#container<BR>{<BR>width: 90%;<BR>margin: 10px=20
+auto;<BR>background-color: #fff;<BR>color: #333;<BR>border: 1px solid=20
+gray;<BR>line-height: 130%;<BR>}<BR><BR>#top<BR>{<BR>padding:=20
+.5em;<BR>background-color: #ddd;<BR>border-bottom: 1px solid=20
+gray;<BR>}<BR><BR>#top h1<BR>{<BR>padding: 0;<BR>margin:=20
+0;<BR>}<BR><BR>#leftnav<BR>{<BR>float: left;<BR>width: 160px;<BR>margin: =
+
+0;<BR>padding: 1em;<BR>}<BR><BR>#content<BR>{<BR>margin-left:=20
+200px;<BR>border-left: 1px solid gray;<BR>padding: 1em;<BR><SPAN=20
+class=3Dnew>max-width: 36em;</SPAN><BR>}<BR><BR>#footer<BR>{<BR>clear:=20
+both;<BR>margin: 0;<BR>padding: .5em;<BR>color: =
+#333;<BR>background-color:=20
+#ddd;<BR>border-top: 1px solid gray;<BR>}<BR><BR>#leftnav p { margin: 0 =
+0 1em 0;=20
+}<BR>#content h2 { margin: 0 0 .5em 0; }<BR><BR><BR><STRONG>HTML=20
+CODE</STRONG><BR>&lt;div =
+id=3D"<STRONG>container</STRONG>"&gt;<BR>&lt;div=20
+id=3D"<STRONG>top</STRONG>"&gt;<BR>&lt;h1&gt;Header&lt;/h1&gt;<BR>&lt;/di=
+v&gt;<BR>&lt;div=20
+id=3D"<STRONG>leftnav</STRONG>"&gt;<BR>&lt;p&gt;<BR>Lorem ipsum dolor =
+sit amet,=20
+consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt=20
+ut.<BR>&lt;/p&gt;<BR>&lt;/div&gt;<BR>&lt;div=20
+id=3D"<STRONG>content</STRONG>"&gt;<BR>&lt;h2&gt;Subheading&lt;/h2&gt;<BR=
+>&lt;p&gt;<BR>Lorem=20
+ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy =
+nibh=20
+euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi =
+enim ad=20
+minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis =
+nisl ut=20
+aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in =
+hendrerit in=20
+vulputate velit esse molestie consequat, vel illum dolore eu feugiat =
+nulla=20
+facilisis at vero eros et accumsan et iusto odio dignissim qui blandit =
+praesent=20
+luptatum zzril delenit augue duis dolore te feugait nulla=20
+facilisi.<BR>&lt;/p&gt;<BR>&lt;p&gt;<BR>Ut wisi enim ad minim veniam, =
+quis=20
+nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex =
+ea=20
+commodo consequat. Duis autem vel eum iriure dolor in hendrerit in =
+vulputate=20
+velit esse molestie consequat, vel illum dolore eu feugiat nulla =
+facilisis at=20
+vero eros et accumsan et iusto odio dignissim qui blandit praesent =
+luptatum=20
+zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum =
+dolor sit=20
+amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod =
+tincidunt ut=20
+laoreet dolore magna aliquam erat=20
+volutpat.<BR>&lt;/p&gt;<BR>&lt;/div&gt;<BR>&lt;div=20
+id=3D"<STRONG>footer</STRONG>"&gt;<BR>Footer<BR>&lt;/div&gt;<BR>&lt;/div&=
+gt;</CODE>=20
+</DIV>
+<ADDRESS>Other Max Design <A=20
+href=3D"http://www.maxdesign.com.au/presentation/">articles and=20
+presentations</A><BR>Associated with <A=20
+href=3D"http://webstandardsgroup.org/">webstandardsgroup.org</A>=20
+</ADDRESS></DIV></BODY></HTML>
+
+------=_NextPart_000_0007_01C9A63E.F928BEB0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.maxdesign.com.au/stylesheets/floatutorial.css
+
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 90%; PADDING-BOTTOM: =
+0px; MARGIN: 0px; COLOR: #000; PADDING-TOP: 0px; FONT-FAMILY: arial, =
+helvetica, sans-serif; BACKGROUND-COLOR: #e6eeef
+}
+#header H1 {
+	DISPLAY: none
+}
+H2 {
+	FONT-SIZE: 160%; COLOR: #347879; BACKGROUND-COLOR: transparent
+}
+H3 {
+	MARGIN-TOP: 20px; FONT-SIZE: 110%; COLOR: #347879; BACKGROUND-COLOR: =
+transparent
+}
+.clearboth {
+	CLEAR: both
+}
+#header {
+	BACKGROUND-POSITION: 17px 0px; BACKGROUND-IMAGE: =
+url(/floatutorial/images/header.gif); WIDTH: 100%; COLOR: #000; =
+BACKGROUND-REPEAT: no-repeat; HEIGHT: 80px; BACKGROUND-COLOR: #fff
+}
+#contentblock {
+	MARGIN-LEFT: 30px; WIDTH: 32em; PADDING-TOP: 10px
+}
+#contentblock2 {
+	MARGIN-LEFT: 30px; WIDTH: 32em; PADDING-TOP: 10px
+}
+A:link {
+	COLOR: #054345; BACKGROUND-COLOR: transparent
+}
+A:visited {
+	COLOR: #888; BACKGROUND-COLOR: transparent
+}
+A:hover {
+	COLOR: #600; BACKGROUND-COLOR: transparent
+}
+A:active {
+	COLOR: #600; BACKGROUND-COLOR: transparent
+}
+HR {
+	BORDER-TOP-WIDTH: 0px; CLEAR: both; MARGIN-TOP: 30px; =
+BORDER-LEFT-WIDTH: 0px; BACKGROUND: #fff; BORDER-BOTTOM-WIDTH: 0px; =
+COLOR: #fff; HEIGHT: 10px; BORDER-RIGHT-WIDTH: 0px
+}
+CODE {
+	CLEAR: both; DISPLAY: block; COLOR: #333; FONT-FAMILY: courier, =
+"courier new", monospace
+}
+#nav {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 90%; PADDING-BOTTOM: =
+2px; MARGIN: 0px; PADDING-TOP: 2px; BACKGROUND-COLOR: #347879
+}
+#nav LI {
+	DISPLAY: inline; PADDING-LEFT: 30px; LIST-STYLE-TYPE: none
+}
+#nav A:link {
+	COLOR: #fff; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+#nav A:visited {
+	COLOR: #fff; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+#nav A:hover {
+	COLOR: #347879; BACKGROUND-COLOR: #fff
+}
+#nav A:active {
+	COLOR: #347879; BACKGROUND-COLOR: #fff
+}
+#nav2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 90%; PADDING-BOTTOM: =
+1px; MARGIN: 0px; PADDING-TOP: 1px; BACKGROUND-COLOR: #8db3b4
+}
+#nav2 LI {
+	DISPLAY: inline; PADDING-LEFT: 30px; LIST-STYLE-TYPE: none
+}
+#nav2 A:link {
+	COLOR: #043435; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+#nav2 A:visited {
+	COLOR: #0f5557; BACKGROUND-COLOR: transparent; TEXT-DECORATION: none
+}
+#nav2 A:hover {
+	COLOR: #fff; BACKGROUND-COLOR: #084c4e
+}
+#nav2 A:active {
+	COLOR: #fff; BACKGROUND-COLOR: #084c4e
+}
+.mainmenu {
+	PADDING-LEFT: 0px; MARGIN-LEFT: 0px; LIST-STYLE-TYPE: none
+}
+.mainmenu LI {
+	PADDING-LEFT: 10px; FONT-SIZE: 95%; BACKGROUND: =
+url(/listamatic/images/arrow.gif) no-repeat 0px 0.3em
+}
+TABLE {
+	MARGIN: 0px 30px; COLOR: #333; BACKGROUND-COLOR: #fff
+}
+TH {
+	COLOR: #000; BACKGROUND-COLOR: #bbb; TEXT-ALIGN: left
+}
+TBODY TH {
+	FONT-WEIGHT: normal; BACKGROUND-COLOR: #fff
+}
+TBODY .row2 TH {
+	BACKGROUND-COLOR: #ddd
+}
+.row2 {
+	BACKGROUND-COLOR: #ddd
+}
+.foo {
+	BACKGROUND-COLOR: #98bae0
+}
+CAPTION {
+	FONT-WEIGHT: bold; FONT-SIZE: 110%; PADDING-BOTTOM: 5px; COLOR: #666; =
+BACKGROUND-COLOR: transparent; TEXT-ALIGN: left
+}
+.submitlist LI {
+	MARGIN-BOTTOM: 1em
+}
+.new {
+	FONT-WEIGHT: bold; COLOR: #900; BACKGROUND-COLOR: transparent
+}
+.containingbox {
+	BORDER-RIGHT: #666 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #666 1px =
+solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; BORDER-LEFT: #666 1px =
+solid; COLOR: #333; PADDING-TOP: 10px; BORDER-BOTTOM: #666 1px solid; =
+BACKGROUND-COLOR: #fff
+}
+#content2 {
+	FLOAT: left; MARGIN: 1em 0px 0px 20px; WIDTH: 500px
+}
+#sidebar2 {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: #d6e0e1; FLOAT: =
+left; PADDING-BOTTOM: 10px; MARGIN: 1em 0px 0px 20px; WIDTH: 200px; =
+PADDING-TOP: 10px
+}
+#content2 H2 {
+	MARGIN-LEFT: 0px
+}
+#content H3 {
+	MARGIN-LEFT: 0px
+}
+#content P {
+	MARGIN-LEFT: 0px
+}
+#content UL {
+	MARGIN-LEFT: 0px
+}
+#content OL {
+	MARGIN-LEFT: 0px
+}
+#content2 P {
+	WIDTH: auto
+}
+#content OL {
+	WIDTH: auto
+}
+#content2 UL {
+	PADDING-LEFT: 0px
+}
+#content OL {
+	PADDING-LEFT: 0px
+}
+#sidebar2 H2 {
+	MARGIN: 0px
+}
+#sidebar2 H2 {
+	MARGIN-LEFT: 0px
+}
+#sidebar H3 {
+	MARGIN-LEFT: 0px
+}
+#sidebar P {
+	MARGIN-LEFT: 0px
+}
+#sidebar UL {
+	MARGIN-LEFT: 0px
+}
+#sidebar OL {
+	MARGIN-LEFT: 0px
+}
+#sidebar2 P {
+	WIDTH: auto
+}
+#sidebar OL {
+	WIDTH: auto
+}
+#sidebar2 UL {
+	PADDING-LEFT: 0px
+}
+#sidebar OL {
+	PADDING-LEFT: 0px
+}
+#footer2 {
+	CLEAR: both; BORDER-TOP: #666 1px solid; FONT-SIZE: 90%; MARGIN: 20px =
+0px 20px 30px; WIDTH: 33em; PADDING-TOP: 5px; FONT-STYLE: normal
+}
+#footer2 P {
+	MARGIN-LEFT: 0px
+}
+
+------=_NextPart_000_0007_01C9A63E.F928BEB0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://css.maxdesign.com.au/stylesheets/print.css
+
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: =
+10pt; COLOR: #000; PADDING-TOP: 0px; FONT-FAMILY: arial, helvetica, =
+sans-serif; BACKGROUND-COLOR: #fff
+}
+.clearboth {
+	CLEAR: both
+}
+CODE {
+	BORDER-RIGHT: #666 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #666 1px =
+solid; DISPLAY: block; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; =
+BORDER-LEFT: #666 1px solid; COLOR: #000; PADDING-TOP: 10px; =
+BORDER-BOTTOM: #666 1px solid; FONT-FAMILY: courier, "courier new", =
+monospace; BACKGROUND-COLOR: #ddd
+}
+ADDRESS {
+	BORDER-TOP: #000 1px solid; PADDING-TOP: 5px
+}
+#nav {
+	DISPLAY: none
+}
+A:link {
+	COLOR: #000; BACKGROUND-COLOR: transparent
+}
+A:visited {
+	COLOR: #000; BACKGROUND-COLOR: transparent
+}
+A:hover {
+	COLOR: #fff; BACKGROUND-COLOR: #000
+}
+A:active {
+	COLOR: #fff; BACKGROUND-COLOR: #000
+}
+.new {
+	FONT-WEIGHT: bold; COLOR: #900; BACKGROUND-COLOR: transparent
+}
+
+------=_NextPart_000_0007_01C9A63E.F928BEB0--

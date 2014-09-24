@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+<title>Absolute Positioning with Percentages Example in CSS</title>
+    <meta charset='utf-8'>
+
+<style type="text/css">
+
+/* an id (content) is created which defines a box, where the left border is 25% of the page away from the left edge of the browser window and the top is exactly 10 pixels below the top of the browser window */
+
+.content {
+	margin-left:25%;
+	background-color: white;
+	}
+
+/* an id (menu) is created, which defines a box, where the left border is 0% of the page away from the left edge of the browser window - it is right against the edge. The top of the box is 10 pixels below the top*/
+
+.menu {
+	position:absolute;
+	top: 10px;
+	left: 0;
+	background-color: white;
+	}
+	
+</style>
+
+</head>
+
+<body>
+
+<!-- begin the content box -->
+
+<div class="content">
+  <h1>This is the content for my page.</h1>
+	<p>This page represents an example of how to use CSS for positioning. There
+    are four basic ways that you can position elements in CSS. By default, elements
+    remain in the flow (also called static positioning), which means that they
+    simply appear on the page as they appear in the .html. Second, you can position
+    elements absolutely, which means that they are taken out of the flow and
+    positioned with respect to their parent element. Third, you can use a fixed
+    position, which means the box is taken out of the flow and positioned relative
+    to the browser window. Fourth, is relative positioning, which means the elments
+    are positioned with respect to where they would have appeared in the default
+    flow.</p>
+	<h2>This is more content for my page.</h2>
+	<p>So that I can illustrate what happens when you scroll up and down the page
+	and also to illustrate what happens when you resize the browser window I am
+	adding more content. If you use a fixed positioning, scrolling up and down
+	has an interesting effect in that elements that are fixed will remain in the
+	window, while others will scroll up and down. If you resize the window it
+	will have an impact on elements that have been sized or positioned with percentage
+	since they will grow and shrink with respect to the browser window (&quot;liquid
+	layout&quot;), while elements that are sized or positioned absolutely, will
+	not shrink.</p>
+</div>
+
+<!-- begin the menu box -->
+
+<div class="menu">
+	<strong>This is my Menu</strong>
+	<ul>
+		<li>This is a menu item</li>
+		<li>This is a menu item</li>
+		<li>This is a menu item</li>
+		<li>This is a menu item</li>
+	</ul>
+    <p><img src="css-example.png" width="210" height="146" /></p>
+</div>
+</body>
+</html>

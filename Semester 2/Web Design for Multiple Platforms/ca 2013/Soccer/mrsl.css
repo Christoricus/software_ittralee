@@ -1,0 +1,35 @@
+﻿/* Murfreesboro Regional Soccer League */
+
+
+h1 {
+  font-size: 32px;
+  text-align:center;
+  }
+
+#head {
+ 
+  background: #8CC63F;
+  padding: 12px;
+  margin: 0;
+  border-bottom: 1px solid black;
+  }
+ 
+#box {
+  width: 672px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 7px solid black;
+
+  }
+.maintext {
+  padding-left: 8px;
+  padding-right: 8px;
+  
+  }
+#contact {
+  text-align: right;
+  padding:8px;
+  color: white;
+  background: black;
+  margin: 0;
+  }

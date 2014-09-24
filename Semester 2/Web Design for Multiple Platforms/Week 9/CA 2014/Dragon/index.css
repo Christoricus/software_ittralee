@@ -1,0 +1,96 @@
+body{
+	background-color: #333;
+	font-size:62.5%;
+}
+
+.container {
+  margin: 0px 0px 30px; 
+  padding: 0px; 
+  text-align: center; 
+  color:#ccc;
+  font-family: verdana, arial, helvetica, sans-serif; 
+  background-color: #333;
+}
+a {
+	color: #ccc; 
+  font-weight: bold; 
+  text-decoration: none;
+}
+a:visited {
+	color: #ccc);
+} 
+a:hover {
+	color: #ccc; 
+  text-decoration: underline;
+}
+a:active {
+	color: #ccc;
+}
+
+
+b {
+	font-weight: bold;
+}
+
+p {
+	line-height: 22px; 
+  font-size: 1.2em;
+  margin-top: 20px; 
+  margin-bottom: 10px;
+}
+
+h1 {
+	line-height: 26px; 
+  font-size: 1.4em; 
+  font-weight: bold; 
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+  
+.tiny {
+	line-height: 16px; 
+  font-size: .9em; 
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align:center;
+ 
+}
+.innerbox {
+
+  padding: 20px; 
+  border: 1px solid #ccc;
+}
+  #head {   
+  background-image:url('bluewhale-skeleton3B03.gif');
+  background-repeat:no-repeat;
+  background-position:top; 
+
+  border-width: 1px 1px medium; 
+  border-top-style: solid;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style:none;
+  border-color:#ccc;
+  margin: 30px auto 0px; 
+  padding: 0px; 
+  width: 600px; 
+  height: 160px; 
+    }
+
+#content {
+  position:relative;
+  background: #666; 
+  border-width: 1px; 
+  border-top-style: none;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-bottom-style:solid; 
+  border-color:#ccc; 
+  margin: -1px auto 0px; 
+  padding: 30px 50px 90px; 
+  width: 500px; 
+  text-align: left;  
+  
+}
+ 

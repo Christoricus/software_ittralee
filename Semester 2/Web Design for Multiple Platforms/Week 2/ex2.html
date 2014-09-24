@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--  Float exercise week 2. This week we covered overflow and clear (float) -->
+
+<html lang="en">
+<head>
+	<title>Float Exercise 2 | Week 2 </title>
+	<meta charset="utf-8">
+	
+	<style type="text/css">
+	
+		#container {
+			width: 100%;
+			padding-top: 0px;
+			border: 1px solid #000;
+			line-height: 150%;
+			
+		}
+		
+		header {
+			margin-top: 0px;
+			height: 50px;
+			padding-top: 5px;
+			padding-bottom: 25px;
+			padding-left: 5px;
+			background: grey;
+		}
+		
+		h1 {
+			color: #fff;
+		}
+		
+		#nav {
+			width: 150px;
+			line-height: 150%;
+			float: left;
+			border-right: 1px solid #000;
+			padding-left: 5px;
+		
+		}
+		
+		#content {
+			overflow: auto;
+			padding-top: 30px;
+			padding-left: 20px;
+			
+		}
+		
+		footer {
+			clear: left;
+			height: 40px;
+			background: grey;
+			padding: 3px;
+			
+		}
+		
+		footer>p {
+			color: #fff;
+		}
+		
+	
+	</style>
+
+</head>
+
+<body>
+
+<div id="container">
+	<header>
+		<h1>W3Schools.com</h1>
+	
+	</header>
+	
+	<div id="nav">
+		<p>"Never increase, beyond what is necessary, 
+		the number of entities required to explain anything." William of Ockham (1285-1349)</p>
+	</div>
+	
+	<div id="content">
+		<h2>Free Web Building Tutorials</h2>
+		<p>At W3Schools you will find all the Web-building tutorials you need, from basic HTML and XHTML to advanced XML, XSL, Multimedia and WAP.<p>
+		
+		<p>W3Schools - The Largest Web Developers Site On The Net!</p>
+
+	
+	</div>
+	
+
+	<footer>
+		<p>Copyright 1999-2005 by Refsnes Data.</p>
+	</footer>
+
+</div>
+
+</body>
+
+</html>

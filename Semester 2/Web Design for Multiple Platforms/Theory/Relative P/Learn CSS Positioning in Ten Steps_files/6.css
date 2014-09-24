@@ -1,0 +1,9 @@
+#div-1 {
+	height: 250px; position: relative;
+}
+#div-1a {
+	top: 0px; width: 200px; right: 0px; position: absolute;
+}
+#div-1b {
+	left: 0px; top: 0px; width: 200px; position: absolute;
+}

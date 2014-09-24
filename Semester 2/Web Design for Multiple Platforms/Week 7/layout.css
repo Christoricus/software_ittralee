@@ -1,0 +1,58 @@
+
+
+body {
+	
+	font-family: Verdana, sans-serif, Helvetica, "Times New Roman";
+	font-size: 1em;
+	margin: 0 auto;
+	min-width: 40em;
+	max-width: 56em;
+
+}
+
+
+
+#wrapper {
+  margin: 0 14em 0 12em;
+  padding: 0 1em;}
+
+
+#main {
+  float: left;
+  width: 100%;
+  background-color: pink;
+}
+
+
+#header {
+	background-color: #369;
+	color: #fff;
+}
+
+#sidebar {
+  float: left;
+  width: 13em;
+  padding: 0 0.5em;
+  background-color: #ff6;
+  margin-left: -14em;
+  position: relative;
+  left: 15em;
+  
+}
+
+#nav {
+  float: left;
+  width: 11em;
+  padding: 0 0.5em;
+  background-color: #ddd;
+  margin-left: -100%;
+  position: relative;
+  right: 13em;
+  
+}
+
+#footer {
+	clear: left;
+	border-top: 1px solid #369;
+	
+}

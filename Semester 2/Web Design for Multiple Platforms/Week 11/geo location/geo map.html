@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+  <title>green layout</title>
+    <meta charset='utf-8'> 
+	
+<!--http://www.youtube.com/embed/obOa8fdJ9aQ-->
+	</head>
+<!--specify the GOOGLE MAPS API which we will need later to turn our coordinates into tangable data-->
+	
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script>
+	
+	navigator.geolocation.getCurrentPosition(success);
+	function success(position){
+	var mylat = position.coords.latitude;
+	var mylong = position.coords.longitude;
+	
+	
+	//use the google maps api specified above to create the map out of our coords
+	//need to specify 3 things for our map, 
+	//our coords, a marker, define the map itself
+	
+	//Google-API-ready latitude and longitude string
+	var coords  = new google.maps.LatLng(mylat, mylong);
+	
+	// Options for google map to work
+	//how zoomed in it is, where the center is and then the type of map i.e. road or sat
+	var mapOptions  = {
+	
+	zoom:16,
+	center:coords,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+	
+	}
+	//creating the map 
+	//specify where do we put the map on the page and the map options
+	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+	
+	//no marker yet on the map so we create a marker and specify the map we want to use and the coords of the marker
+	var marker = new google.maps.Marker({map:map, position:coords})
+	}
+	
+
+	</script>
+<body>
+<div id = "map" style = "width:400px;height:400px;">
+</div>
+</body>
+</html>

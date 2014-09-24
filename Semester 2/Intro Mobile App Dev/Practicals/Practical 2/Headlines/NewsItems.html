@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>News Items</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+    <script type="text/javascript" src="newsitems.js">
+        
+    </script>
+
+</head>
+<body>
+    <h1>
+        News Items</h1>
+    <form action="" name="newsHeadlines">
+    <table border="0" width="100%">
+        <tr valign="top">
+            <td>
+                <select name="headline" style="height: 93px">
+                    <option onclick="document.newsHeadlines.news.value=newsItem1" >Investigation of building
+                        standards in quake zone</option>
+                    <option onclick="document.newsHeadlines.news.value=newsItem2" >Obama sees signs of economic
+                        progess</option>
+                    <option onclick="document.newsHeadlines.news.value=newsItem3">Apple App Downloads Approach
+                        1 Billion</option>
+                    <option onclick="document.newsHeadlines.news.value=newsItem4">Jones, Braves beat winless
+                        Nationals 8-5</option>
+                    <option onclick="document.newsHeadlines.news.value=newsItem5">America's uninsured haven't
+                        shown collective power</option>
+                </select>
+            </td>
+            <td>
+                <textarea name="news" cols="50" rows="10"></textarea>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title></title>
+    <meta charset='utf-8'>
+  <style type="text/css">
+  
+  
+  a, a:link, a:visited, a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+  /* Menu */
+ 
+  .menu-container {
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 500px;
+  }
+ 
+  /* Menu items */
+ 
+  .menu-container a {
+    background: #1E90FF;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+    -moz-transition: background-color .3s;
+    -o-transition: background-color .3s;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+  }
+ 
+  .menu-container .active {
+    background: #FFD700;
+    color: #555;
+  }
+ 
+  .menu-container a:hover,
+  .menu-container .active:hover {
+    background: #ADD8E6;
+    color: #555;
+  }
+ 
+  /* Responsive Menu Button */
+ 
+  .menu-container .menu-button {
+    background: #999;
+    display: none;
+  } 
+ 
+  /* Responsive */
+ 
+  @media all and (max-width: 550px) {
+    .menu-container {
+      width: 50%;
+    }
+ 
+    .menu-container .menu-button {
+      display: block;
+    }
+ 
+    .menu-container .menu {
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+ 
+      -moz-transition: opacity 1s ease-out;
+      -o-transition: opacity 1s ease-out;
+      -webkit-transition: opacity 1s ease-out;
+      transition: opacity 1s ease-out;   
+      width: 100%;
+    }
+ 
+    .menu a {
+      display: block;
+      margin: 1px 0;
+    }
+ 
+    #menu:target .menu {
+      opacity: 1; 
+      height: auto;
+    }
+ 
+    #menu:target .menu-button {
+      display: none;
+    }
+  }
+  
+  </style>
+  </head>
+  <body>
+   <div id="menu">
+    <div class="menu-container">
+      <a href="#menu" class="menu-button">Menu</a>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">News</a>
+        <a href="#">Forum</a>
+        <a href="#">Support</a>
+        <a href="#">About</a>
+        <a href="#" class="active">Contact Us</a>  
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

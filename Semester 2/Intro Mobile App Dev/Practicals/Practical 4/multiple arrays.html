@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang='cs'>
+  <head>
+    <title></title>
+    <meta charset='utf-8'>
+  
+     <script type="text/javascript">
+      var courses = new Array("mm", "gd", "sd", "it");
+  
+  var students = new Array(4);
+  var largest=0;
+  var pos=0;
+  
+  
+  for (var i = 0; i< students.length; i++)
+  {
+     var text = "For the " + courses[i] + " course";
+     students[i] = parseInt(window.prompt("enter the number of students" , text));
+  
+  }
+  
+  var count=0;
+  while (count < students.length) {  
+      if (students[count] > largest)
+         { 
+             largest = students[count];
+             pos = count; 
+         }
+         count++;  
+  }
+  window.alert(courses[pos] + " has the largest no at " + largest) ;
+  
+  
+  </script>
+  
+  
+  </head>
+  <body>
+
+  </body>
+</html>
