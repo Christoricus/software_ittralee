@@ -2,6 +2,9 @@ package lab0;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/* Find the equilibrium index of a given array
+ * The index can be more than 1 or none
+ */
 public class EquilibriumIndex {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
@@ -27,19 +30,19 @@ public class EquilibriumIndex {
 			//Finding the sum of the left sum
 			for (k = 0; k < j; k++) {
 				leftSum += num[k];
-				System.out.println("Leftsum is: " + leftSum);
+				//System.out.println("Leftsum is: " + leftSum);
 			}
 			
 			//Finding the sum of the right sum
 			for (k = j+1; k < num.length; k++) {
 				rightSum += num[k];
-				System.out.println("Rightsum is: " + rightSum);
+				//System.out.println("Rightsum is: " + rightSum);
 			}
-			System.out.println("Iteration: " );
+			//System.out.println("Breaking point");
 
 			//Comparing rightSum with leftSum
 			if (leftSum == rightSum)
-				System.out.print(j + " ");
+				System.out.println("The equilibrium number(s): " + j + " ");
 		
 		} // outer for loop
 
