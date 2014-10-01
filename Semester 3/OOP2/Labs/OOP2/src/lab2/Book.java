@@ -6,7 +6,7 @@ public class Book {
 	private double price;
 	private String ISBN;
 	private int pages;
-	
+
 	//Constructors
 	public Book() {
 		title = "No Title";
@@ -63,4 +63,5 @@ public class Book {
 		
 		return msg;
 	}
+	
 }
