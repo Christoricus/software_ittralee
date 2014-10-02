@@ -14,6 +14,7 @@ public class Message {
 	public Message(String sndr, String rcvr) {
 		this.sender = sndr;
 		this.receiver = rcvr;
+		message = "";
 	}
 	
 	//Accessor
@@ -32,5 +33,16 @@ public class Message {
 	
 	public void setReceiver(String rcvr) {
 		this.receiver = rcvr;
+	}
+	
+	//Append a line of text in the message body
+	public void append(String msg) {
+		this.message = msg;
+	}
+	
+	//Printing off
+	public String toString() {
+		String msg = String.format("From: %s\nTo: %s\nMessage: %s", sender, receiver, message);
+		return msg;
 	}
 }
