@@ -37,7 +37,7 @@ public class Message {
 	
 	//Append a line of text in the message body
 	public void append(String msg) {
-		this.message = msg;
+		this.message += msg;
 	}
 	
 	//Printing off
