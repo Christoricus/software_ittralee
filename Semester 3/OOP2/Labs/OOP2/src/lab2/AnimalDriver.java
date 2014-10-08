@@ -4,8 +4,9 @@ import java.util.Scanner;
 public class AnimalDriver {
 	static Scanner in = new Scanner(System.in);
 	public static void main(String[] args) {
-
-		Animal ass = new Animal();
+		
+		Animal ass = new Animal(); //Creating enum object
+		
 		String[] cont = new String[5];
 		
 		ass.setType("Donkey");
@@ -13,8 +14,6 @@ public class AnimalDriver {
 		ass.setAge(5);
 		
 		ass.setContinents(enterContinents(cont)); //getting the user-supplied continents
-
-		
 		System.out.println(ass.toString());
 		
 	}
@@ -34,4 +33,6 @@ public class AnimalDriver {
 		}
 		return cont;
 	}
+	
 }
+

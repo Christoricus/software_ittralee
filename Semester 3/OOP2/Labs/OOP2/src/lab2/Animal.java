@@ -11,6 +11,7 @@ public class Animal {
 		this("unknown", null, 0.0, 0); //"Constructor call" calls the main constructor
 	}
 	
+	
 	public Animal(String typ, String[] cont, double wt, int age) {
 		
 		/**this.type = typ;
@@ -81,4 +82,5 @@ public class Animal {
 									type, conts, weight, age);
 		return msg;
 	}
+	
 }
