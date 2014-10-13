@@ -66,6 +66,8 @@ CREATE TABLE Members (
 	Street char(25),
 	Town char(20),
 	County char(20),
+	Email char(25),
+	No_Out numeric(3),
 	Status char(1),
 	CONSTRAINT pk_Members PRIMARY KEY (Member_Id)
 );
