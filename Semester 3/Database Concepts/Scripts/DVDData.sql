@@ -1,4 +1,4 @@
--- Competition.sql
+-- DVDData.sql
 -- This script populates the DVDSys database
 
 PROMPT Populating Age_Ratings
