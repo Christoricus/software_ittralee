@@ -1,3 +1,4 @@
+package ca1;
 
 public class Pet {
 	private String type;
@@ -53,6 +54,7 @@ public class Pet {
 		} else {
 			for (int i = 0; i < vaccinations.length; i++) {
 				if (vaccinations[i] == null || vaccinations[i] == "") {
+					//vacs = "None";
 					break;
 				
 				} else {
@@ -60,6 +62,7 @@ public class Pet {
 				}
 					
 			}
+			vacs = vacs.substring(0, vacs.length()-2);
 		}
 		
 		String msg = String.format("Type: %s\nAge: %d\nVaccinations: %s\n", getType(),  getAge(), vacs);

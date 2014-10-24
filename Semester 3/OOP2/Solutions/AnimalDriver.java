@@ -40,7 +40,8 @@ public class AnimalDriver{
 			continent = JOptionPane.showInputDialog("Please enter continent(max 5) " + (count+1));
 			
 			if (continent.equals(""))
-				for (int i=count;i<cons.length-1;i++)cons[i]=null;
+				for (int i=count;i<cons.length-1;i++)
+					cons[i]=null;
 			else
 				cons[count]=continent;
 			count++;
