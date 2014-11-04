@@ -1,6 +1,7 @@
 package ca1;
 import java.util.Arrays;
 import java.util.Scanner;
+
 public class PetDriver {
 	public static void main(String[] args) {	
 		String vaccine;
@@ -8,10 +9,7 @@ public class PetDriver {
 		
 		//Number of pets
 		System.out.print("Enter number of pets: ");
-		String numAsString = readMe();
-		int num = Integer.parseInt(numAsString);
-		
-		Pet[] myPets = new Pet[num];
+		Pet[] myPets = new Pet[Integer.parseInt(readMe())];
 		Pet p1 = new Pet();
 
 		//Type of pet
@@ -25,12 +23,13 @@ public class PetDriver {
 			
 			System.out.print("Enter vaccination 1: ");
 			vaccine = readMe();
-			int totVac = 0;
-			while (!vaccine.equals("") && totVac < vacs.length) {
-				vacs[totVac] = vaccine;
+			vacs[0] = vaccine;
 			
-				System.out.print("Enter vaccination " + (totVac+2) + ": ");
+			int totVac = 1;
+			while (!vaccine.equals("") && totVac < vacs.length) {
+				System.out.print("Enter vaccination " + (totVac+1) + ": ");
 				vaccine = readMe();
+				vacs[totVac] = vaccine;
 				totVac++;
 			}//end inner while to get total vaccines
 			p1.setVaccinations(vacs);
