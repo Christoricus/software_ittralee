@@ -1,0 +1,180 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0058)http://zetcode.com/databases/mysqltutorial/storageengines/ -->
+<HTML><HEAD><TITLE>MySQL storage engines</TITLE><LINK rel=stylesheet 
+type=text/css href="MySQL%20storage%20engines_files/format.css">
+<META content="text/html; charset=utf-8" http-equiv=content-type>
+<META name=keywords 
+content="MySQL, storage engine, MyISAM, InnoDB, Merge, CSV, Memory" ?>
+<META name=description 
+content="In this part of the MySQL tutorial, we will cover&#10;the MySQL storage engines.">
+<META name=language content=en>
+<META name=author content="Jan Bodnar">
+<META name=distribution content=global>
+<SCRIPT type=text/javascript 
+src="MySQL%20storage%20engines_files/jquery.js"></SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="MySQL%20storage%20engines_files/common.js"></SCRIPT>
+
+<META name=GENERATOR content="MSHTML 9.00.8112.16496"></HEAD>
+<BODY>
+<DIV class=container>
+<DIV id=wide_ad class=ltow>
+<SCRIPT type=text/javascript><!--
+google_ad_client = "pub-9706709751191532";
+/* 160x600, August 2011 */
+google_ad_slot = "2484182563";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</SCRIPT>
+
+<SCRIPT type=text/javascript 
+src="MySQL%20storage%20engines_files/show_ads.js">
+</SCRIPT>
+</DIV>
+<DIV class=content><A title=Home href="http://zetcode.com/">Home</A>&nbsp; <A 
+href="http://zetcode.com/databases/mysqltutorial/">Contents</A> 
+<H1>MySQL storage engines</H1>
+<P>In this chapter, we will talk about MySQL storage engines. </P>
+<P>A storage engine is a software module that a database management system uses 
+to create, read, update data from a database. There are two types of storage 
+engines in MySQL. Transactional and non-transactional. </P>
+<SCRIPT type=text/javascript><!--
+google_ad_client = "pub-9706709751191532";
+/* NewSquare */
+google_ad_slot = "0364418177";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</SCRIPT>
+
+<SCRIPT type=text/javascript src="MySQL%20storage%20engines_files/show_ads.js"> 
+</SCRIPT>
+
+<P>The default storage engine for MySQL prior to version 5.5 was MyISAM. For 
+MySQL 5.5 and later, the default storage engine is InnoDB. Choosing the right 
+storage engine is an important strategic decision, which will impact future 
+development. In this tutorial, we will be using MyISAM, InnoDB, Memory and CSV 
+storage engines. If you are new to MySQL and your are studying the MySQL 
+database management system, then this is not much of a concern. If you are 
+planning a production database, then things become more complicated. </P>
+<H2 id=list>List of storage engines</H2>
+<P>MySQL supported storage engines: </P>
+<UL>
+  <LI>MyISAM 
+  <LI>InnoDB 
+  <LI>Memory 
+  <LI>CSV 
+  <LI>Merge 
+  <LI>Archive 
+  <LI>Federated 
+  <LI>Blackhole 
+  <LI>Example </LI></UL>
+<P><B>MyISAM</B> is the original storage engine. It is a fast storage engine. It 
+does not support transactions. MyISAM provides table-level locking. It is used 
+most in Web, data warehousing. </P>
+<P><B>InnoDB</B> is the most widely used storage engine with transaction 
+support. It is an ACID compliant storage engine. It supports row-level locking, 
+crash recovery and multi-version concurrency control. It is the only engine 
+which provides foreign key referential integrity constraint. </P>
+<P><B>Memory</B> storage engine creates tables in memory. It is the fastest 
+engine. It provides table-level locking. It does not support transactions. 
+Memory storage engine is ideal for creating temporary tables or quick lookups. 
+The data is lost when the database is restarted. </P>
+<P><B>CSV</B> stores data in csv files. It provides great flexibility, because 
+data in this format is easily integrated into other applications. </P>
+<P><B>Merge</B> operates on underlying MyISAM tables. Merge tables help manage 
+large volumes of data more easily. It logically groups a series of identical 
+MyISAM tables, and references them as one object. Good for data warehousing 
+environments. </P>
+<P><B>Archive</B> storage engine is optimized for high speed inserting. It 
+compresses data as it is inserted. It does not support transactions. It is ideal 
+for storing, retrieving large amounts of seldom referenced historical, archived 
+data. </P>
+<P>The <B>Blackhole</B> storage engine accepts but does not store data. 
+Retrievals always return an empty set. The functionality can be used in 
+distributed database design where data is automatically replicated, but not 
+stored locally. This storage engine can be used to perform performance tests or 
+other testing. </P>
+<P><B>Federated</B> storage engine offers the ability to separate MySQL servers 
+to create one logical database from many physical servers. Queries on the local 
+server are automatically executed on the remote (federated) tables. No data is 
+stored on the local tables. It is good for distributed environments. </P>
+<H2 id=choose>Choosing the right engine</H2>
+<P>No storage engine is ideal for all circumstances. Some perform best under 
+certain conditions and perform worse in other situations. There are tradeoffs 
+than must be considered. A more secure solution takes more resources. It might 
+be slower, take more CPU time and disk space. MySQL is very flexible in the fact 
+that it provides several different storage engines. Some of them, like the 
+Archive engine, are created to be used in specific situations. Ironically this 
+also brings a question, which storage engine to use? Which may not be easily 
+answered. </P>
+<P>In some cases, the answer is clear. Whenever we are dealing with some payment 
+systems, we are obliged to use the most secure solution. We cannot afford to 
+loose such sensitive data. InnoDB is the way to go. If we want full-text search, 
+than we must choose MyISAM. Only InnoDB supports foreign key referential 
+integrity constraint and if we plan to use this constraint, then the choice is 
+clear. In many situations we must have enough experience to choose the right 
+engine. And if we lack the experience, than the best way is to ask some seasoned 
+developer. One of the best ways is to ask on specific internet forums. <A 
+href="http://stackoverflow.com/">stackoverflow.com</A> is a great one. The 
+question is further complicated by the fact, that we can choose different 
+storage engines for different tables. </P>
+<H2 id=specalt>Specifying and altering storage engines</H2>
+<P>The storage engine is specified at the time of the table creation. </P><PRE class=code>mysql&gt; CREATE TABLE Cars(Id INTEGER PRIMARY KEY, Name VARCHAR(50), 
+    -&gt; Cost INTEGER) ENGINE='MyISAM';
+</PRE>
+<P>The <CODE>ENGINE</CODE> keyword specifies the storage engine used for this 
+particular table. </P>
+<P>If we do not specify the storage engine explicitly, then the default storage 
+engine is used. Prior to MySQL 5.5 the default storage engine was MyISAM. For 
+MySQL 5.5 and later, the default storage engine is InnoDB. </P><PRE class=code>mysql&gt; SHOW VARIABLES LIKE 'storage_engine';
++----------------+--------+
+| Variable_name  | Value  |
++----------------+--------+
+| storage_engine | InnoDB |
++----------------+--------+
+1 row in set (0.00 sec)
+</PRE>
+<P>The default storage engine can be found in the <CODE>storage_engine</CODE> 
+variable. </P>
+<P>It is possible to migrate to a different storage engine. Note that migrating 
+a large table might take a long time. Also we might run into some problems when 
+migrating tables. Some features might not be supported in both tables. </P><PRE class=code>mysql&gt; SELECT ENGINE FROM information_schema.TABLES
+    -&gt; WHERE TABLE_SCHEMA='mydb'
+    -&gt; AND TABLE_NAME='Cars';
++--------+
+| ENGINE |
++--------+
+| InnoDB |
++--------+
+1 row in set (0.00 sec)
+</PRE>
+<P>This SQL statement finds out the storage engine used for a Cars table in mydb 
+database. We could also use <CODE>SELECT CREATE TABLE Cars</CODE> SQL statement. 
+The <CODE>information_schema</CODE> is a table which stores technical 
+information about our tables. </P><PRE class=code>mysql&gt; ALTER TABLE Cars ENGINE='MyISAM';
+</PRE>
+<P>This SQL statement changes the storage engine to MyISAM. </P><PRE class=code>mysql&gt; SELECT ENGINE FROM information_schema.TABLES
+    -&gt; WHERE TABLE_SCHEMA='mydb'
+    -&gt; AND TABLE_NAME='Cars';
++--------+
+| ENGINE |
++--------+
+| MyISAM |
++--------+
+1 row in set (0.00 sec)
+</PRE>
+<P>Now the storage engine is MyISAM. </P>
+<P>In this part of the MySQL tutorial, we have covered storage engines. </P>
+<DIV class="botNav, center"><SPAN class=botNavItem><A 
+href="http://zetcode.com/">Home</A></SPAN> ‡ <SPAN class=botNavItem><A 
+href="http://zetcode.com/databases/mysqltutorial/">Contents</A></SPAN> ‡ <SPAN 
+class=botNavItem><A 
+href="http://zetcode.com/databases/mysqltutorial/storageengines/#">Top of 
+Page</A></SPAN> </DIV>
+<DIV class=footer>
+<DIV class=signature><A href="http://zetcode.com/">ZetCode</A> last modified 
+Januray 25, 2011 <SPAN class=copyright>© 2007 - 2013 Jan Bodnar</SPAN> 
+</DIV></DIV></DIV><!-- content --></DIV><!-- container --></BODY></HTML>
