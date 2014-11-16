@@ -1,5 +1,5 @@
 package lab3;
-import lab3.WeightPackage;
+import lab3.weightpackage.WeightPackage;
 
 /** Driver class to test out the WeightPackage class functionality */
 
